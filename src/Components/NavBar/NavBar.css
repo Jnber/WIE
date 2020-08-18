@@ -1,0 +1,25 @@
+#WIEIEEE {
+    font-size: x-large;
+    font-family: revert;
+    color: seashell;
+    padding-top: 0.5em;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    #WIEIEEE {
+      display: none;
+    }
+  }
+  
+  
+  .na {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .links {
+      color: seashell;
+  }
+  
+  .ant-menu-horizontal > .ant-menu-item a {
+    color: seashell;
+}

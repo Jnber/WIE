@@ -1,0 +1,107 @@
+.App{
+    background-color: rgb(90, 0, 116);
+  }
+  
+  
+  
+  
+  
+  @media only screen and (min-width: 770px) {
+    .App {
+      background-image: url("./Images/WIEE (1).png");
+    background-position: top;
+    background-size: cover;
+    }
+  }
+  
+  @media only screen and (min-width: 955px) {
+    .App {
+      background-image: url("./Images/WIEE.png");
+    background-position: top;
+    background-size: cover;
+    }
+  }
+  .firstRow {
+    height: 30em;
+  }
+  
+  .Title {
+    font-size: 3em;
+    font-family: sans-serif;
+    color: rgb(254, 192, 199);
+    text-align: center;
+  }
+  
+  .welcomeParagraph{
+    font-size: large;
+    color: white;
+    text-align: justify;
+  
+  }
+  
+  .welcomeSection {
+    justify-content: center;
+    align-items: center;
+    padding: 4em 1em;
+    text-align: center;
+  }
+  
+  .IEEESection {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .Title1 {
+    
+    font-size: 3em;
+    font-family: sans-serif;
+    color:rgb(94, 27, 123);
+    text-align: center;
+    text-shadow: 2px 2px 4px #ffffff;
+    margin-right: 4em;
+  }
+  
+  
+  
+  .a {
+    color:rgb(0, 123, 182);
+    font-size: 8em;
+  }
+  .b {
+    color:rgb(3, 92, 134);
+    font-size: 8em;
+  }
+  .c {
+    color:rgb(35, 62, 121);
+    font-size: 8em;
+  }
+  .d {
+    color:rgb(37, 21, 93);
+    font-size: 8em;
+  }
+  .e {
+    color: rgb(39, 25, 87);
+    font-size: 8em;
+  }
+  .f {
+    color:rgb(46, 6, 64);
+    font-size: 8em;
+  }
+  .g {
+    color:rgb(71, 31, 89);
+    font-size: 8em;
+  }
+  .h {
+    color:rgb(66, 18, 87);
+    font-size: 8em;
+  }
+  .i {
+    color:rgb(94, 27, 123);
+    font-size: 8em;
+  }
+  
+  .IEEEParagraph {
+    font-size: 1.5em;
+    margin: .05em 5em;
+    text-align: justify;
+  }
