@@ -19,7 +19,16 @@
   .links {
       color: seashell;
   }
+
+ .droplinks{
+  color: seashell;
+ }
   
   .ant-menu-horizontal > .ant-menu-item a {
     color: seashell;
 }
+
+.ant-menu-item, .ant-menu-submenu-title {
+  color: gray;
+}
+

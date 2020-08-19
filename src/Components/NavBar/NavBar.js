@@ -7,7 +7,7 @@ import { HomeFilled, CaretRightOutlined } from "@ant-design/icons";
 const { SubMenu } = Menu;
 
 class NavBar extends React.Component {
-  state = {
+  /*state = {
     collapsed: false,
     mode : "horizontale"
   };
@@ -24,15 +24,14 @@ class NavBar extends React.Component {
     } else {
       this.setState({ collapsed: false , mode: "horizontal"});
     }
-  }
+  }*/
   render() {
     return (
      
         <Row className="na">
           <Col span={12} className="na" offset={1}>
             <Menu
-              mode={this.state.mode}
-              inlineCollapsed={this.state.collapsed}
+              mode= "horizontal"
               className="na"
             >
               <Menu.Item icon={<HomeFilled />} className="links">
@@ -48,9 +47,10 @@ class NavBar extends React.Component {
               <SubMenu
                 icon={<CaretRightOutlined />}
                 title="Activities"
-                className="links"
+                className="droplinks"
+                
               >
-                <Menu.Item key="setting:1" href="Events">
+                <Menu.Item key="setting:1" href="Events" >
                   Events
                 </Menu.Item>
                 <Menu.Item key="setting:2" href="Training">
