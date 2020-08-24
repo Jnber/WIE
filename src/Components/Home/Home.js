@@ -2,15 +2,15 @@ import React from 'react';
 import './Home.css';
 import NavBar from '../NavBar/NavBar';
 import {  Row, Col, Button, Carousel } from "antd";
-import Girl from '../../Images/Girl.png'
+import Girl from '../../Images/Girl.webp'
 import I1 from '../../Images/1.jpg'
 import I2 from '../../Images/2.jpg'
 import I3 from '../../Images/3.jpg'
 import I4 from '../../Images/4.jpg'
 import I5 from '../../Images/5.jpg'
 import I6 from '../../Images/6.jpg'
-import IEEEINSAT from '../../Images/IEEEINSAT.png'
-import WIEINSAT from '../../Images/WIEINSAT.png'
+import IEEEINSAT from '../../Images/IEEEINSAT.webp'
+import WIEINSAT from '../../Images/WIEINSAT.webp'
 //import WIE from '../../Images/WIETitle.png'
 
 const contentStyle = {
@@ -73,9 +73,12 @@ function Home() {
         <p className="IEEEParagraph">EEE INSAT student branch is a branch of IEEE at insat institute, Tunis, Tunisia. Founded on january 2nd, 2013 by 12 students of the institute, it has now about 550 members and by that It breaks the record of the largest student branch in Region 8.</p>
       </div>
       <div className="EventsSection">
-        
         <h2 className="Title2">Our Events</h2>
-        <p className="IEEEParagraph">EEE INSAT student branch is a branch of IEEE at insat institute, Tunis, Tunisia. Founded on january 2nd, 2013 by 12 students of the institute, it has now about 550 members and by that It breaks the record of the largest student branch in Region 8.</p>
+        <Row>
+          <col span={3} offset={1}>
+
+          </col>
+        </Row>
       </div>
        
     </Col>
