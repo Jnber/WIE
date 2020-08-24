@@ -28,7 +28,10 @@
     color: seashell;
 }
 
+@media only screen and (max-width: 473px) {
 .ant-menu-item, .ant-menu-submenu-title {
   color: gray;
+}
+
 }
 

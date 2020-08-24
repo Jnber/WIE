@@ -5,6 +5,9 @@ import { Menu, Row, Col } from "antd";
 import { HomeFilled, CaretRightOutlined } from "@ant-design/icons";
 
 const { SubMenu } = Menu;
+const activitiesStyle = {
+  color: "seashell",
+};
 
 class NavBar extends React.Component {
   /*state = {
@@ -48,6 +51,7 @@ class NavBar extends React.Component {
                 icon={<CaretRightOutlined />}
                 title="Activities"
                 className="droplinks"
+                style={activitiesStyle}
                 
               >
                 <Menu.Item key="setting:1" href="Events" >

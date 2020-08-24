@@ -11,7 +11,7 @@
   .Title {
     font-size: 3em;
     font-family: sans-serif;
-    color: rgb(254, 192, 199);
+    color: #e8667b;
     text-align: center;
   }
   
@@ -54,41 +54,8 @@
   
   
   
-  .a {
-    color:rgb(0, 123, 182);
-    font-size: 8em;
-  }
-  .b {
-    color:rgb(3, 92, 134);
-    font-size: 8em;
-  }
-  .c {
-    color:rgb(35, 62, 121);
-    font-size: 8em;
-  }
-  .d {
-    color:rgb(37, 21, 93);
-    font-size: 8em;
-  }
-  .e {
-    color: rgb(39, 25, 87);
-    font-size: 8em;
-  }
-  .f {
-    color:rgb(46, 6, 64);
-    font-size: 8em;
-  }
-  .g {
-    color:rgb(71, 31, 89);
-    font-size: 8em;
-  }
-  .h {
-    color:rgb(66, 18, 87);
-    font-size: 8em;
-  }
-  .i {
-    color:rgb(94, 27, 123);
-    font-size: 8em;
+  .TitleIEEE{
+    width: -webkit-fill-available;
   }
   
   .IEEEParagraph {
@@ -106,13 +73,22 @@
     background-color: white;
   }
   
-  .logo {
-    width: 120%;
+
+  .EventsSection {
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+    margin:1em 2em;
+    text-align: center;
+    
   }
 
-  .WIETitle {
-    font-size: 1100%;
+  .Title2 {
+    
+    font-size: 5em;
+    font-family: sans-serif;
+    color:#e8667b;
     text-align: left;
-    color: darkorchid;
-    padding: 0em 0.8em;
+    margin-right: 2em;
   }
+  
