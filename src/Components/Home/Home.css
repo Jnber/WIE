@@ -6,6 +6,8 @@
     position: absolute;
     margin-left: 55%;
     z-index: 5;
+    margin-top: 2em;
+    width: 30%;
   }
   
   .Title {

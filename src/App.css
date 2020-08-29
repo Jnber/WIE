@@ -1,0 +1,21 @@
+.TitleNav {
+    color: white;
+    font-size: large;
+  }
+
+  #menuicon{
+      display: none;
+  }
+
+  @media only screen and (max-width: 850px) {
+    #menuicon {
+      display: inherit;
+    }
+    .Buttons {
+        display: none;
+    }
+  }
+
+  #Button {
+      margin: 0em 1em;
+  }

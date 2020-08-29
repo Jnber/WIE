@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
-import NavBar from '../NavBar/NavBar';
-import {  Row, Col, Button, Carousel } from "antd";
+
 import Girl from '../../Images/Girl.webp'
 import I1 from '../../Images/1.jpg'
 import I2 from '../../Images/2.jpg'
@@ -11,6 +10,7 @@ import I5 from '../../Images/5.jpg'
 import I6 from '../../Images/6.jpg'
 import IEEEINSAT from '../../Images/IEEEINSAT.webp'
 import WIEINSAT from '../../Images/WIEINSAT.webp'
+
 //import WIE from '../../Images/WIETitle.png'
 
 const contentStyle = {
@@ -24,9 +24,12 @@ const contentStyle = {
 
 function Home() {
   return (
-    <Col className="App" span={24}>
+    <div className="App">
+
+    </div>
+    /*<Col className="App" span={24}>
       <img src={Girl} className="girlimg" alt="girl thinking"></img>
-      <NavBar></NavBar>
+     
       <Row className="firstRow">
         <Col span={10} className="welcomeSection" offset={4}> 
           <h2 className="Title">Welcome Everyone</h2>
@@ -38,7 +41,7 @@ function Home() {
 
       <div className="WIESection"> 
         <Row className="WIESection">
-        <img src={WIEINSAT} alt="IEEE INSAT" className="TitleWIE"></img>
+        <img src={WIEINSAT} alt="WIE INSAT" className="TitleIEEE"></img>
         </Row>
         <p className="IEEEParagraph">IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science.IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
         <Carousel autoplay 
@@ -81,7 +84,7 @@ function Home() {
         </Row>
       </div>
        
-    </Col>
+    </Col>*/
   );
 }
 

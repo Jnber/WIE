@@ -10,6 +10,12 @@
       display: none;
     }
   }
+
+  @media only screen and (max-width: 977px) {
+    .na {
+      display: none;
+    }
+  }
   
   
   .na {

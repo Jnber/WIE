@@ -10,24 +10,7 @@ const activitiesStyle = {
 };
 
 class NavBar extends React.Component {
-  /*state = {
-    collapsed: false,
-    mode : "horizontale"
-  };
-
-  componentDidMount() {
-    this.updateDimensions();
-    window.addEventListener("resize", this.updateDimensions.bind(this));
-  }
-
-  updateDimensions() {
-    if (window.innerWidth < 700) {
-      this.setState({ collapsed: true , mode : "inline"});
-      
-    } else {
-      this.setState({ collapsed: false , mode: "horizontal"});
-    }
-  }*/
+  
   render() {
     return (
      
