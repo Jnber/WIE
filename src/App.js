@@ -19,6 +19,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import Logo from './Images/WIE LOGO.png'
 
 
 const drawerWidth = 240;
@@ -103,6 +104,7 @@ function App() {
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
+        id="Appbar"
       >
         <Toolbar>
           <IconButton
@@ -129,10 +131,9 @@ function App() {
                 ))}
           
           </Grid>
-          <Grid item xs={3}>
-          <Typography variant="h6" noWrap className="TitleNav">
-            WIE IEEE
-          </Typography>
+          <Grid item xs={3} className="logoplace">
+          
+          <img src={Logo} alt="logo" className="Logoimg" ></img>
           </Grid>
         </Toolbar>
       </AppBar>
@@ -163,6 +164,7 @@ function App() {
         className={clsx(classes.content, {
           [classes.contentShift]: open,
         })}
+        id="Main"
       >
         <div className={classes.drawerHeader} />
         <Home></Home>

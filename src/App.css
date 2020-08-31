@@ -7,15 +7,30 @@
       display: none;
   }
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 896px) {
     #menuicon {
       display: inherit;
     }
     .Buttons {
         display: none;
     }
+    #Appbar{
+      align-items: baseline;
+    }
   }
 
   #Button {
-      margin: 0em 1em;
+      margin: 0em 0.5em;
+  }
+
+  .Logoimg {
+    width: 4em;
+  }
+
+  .logoplace {
+    text-align: end;
+  }
+
+  #Main{
+    background-color: rgb(90, 0, 116);
   }
