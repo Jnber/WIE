@@ -16,8 +16,21 @@
     color: #e8667b;
     text-align: center;
   }
+
+  #articles {
+    margin-bottom: 2em;
+  }
   
-  
+
+  @media only screen and (min-width: 960px){
+    .Carouselitems {
+      width: 60%;
+    }
+  }
+    .win{
+      text-align: -webkit-center;
+    }
+
 
   @media only screen and (max-width: 960px){
     .girlimg{

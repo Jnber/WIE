@@ -53,18 +53,20 @@ function Home() {
       
         <img src={Girl} alt="girlthinking" className="girlimg"></img>
         <MainFeaturedPost post={mainFeaturedPost} />
-        <Grid container spacing={4}>
+        <Grid container spacing={4} id="articles">
             {featuredPosts.map((post) => (
               <FeaturedPost key={post.title} post={post} />
             ))}
-          </Grid>
-          <Carousel>
+        </Grid>
+        <div className="win">
+        <Carousel className="Carouselitems">
           {[I1, I2, I3, I4, I5, I6].map((value) => (
             <div>
               <img src={value} alt="Hong Kong" />
             </div>
           ))}
-      </Carousel>
+        </Carousel>
+        </div>
     </div>
     /*
 
