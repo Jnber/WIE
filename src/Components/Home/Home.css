@@ -113,4 +113,17 @@
     text-align: left;
     margin-right: 2em;
   }
-  
+  .picsPlacement {
+    justify-content: center;
+    align-self: center;
+  }
+
+  .Events {
+    color: white;
+    padding-top: 2em;
+  }
+
+  .posts{
+    justify-content: center;
+    padding: 2em;
+  }

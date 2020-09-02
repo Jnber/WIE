@@ -12,6 +12,7 @@ import Hidden from '@material-ui/core/Hidden';
 const useStyles = makeStyles({
   card: {
     display: 'flex',
+    margin:'1em'
   },
   cardDetails: {
     flex: 1,
@@ -20,6 +21,9 @@ const useStyles = makeStyles({
     textAlign: "center",
     color: "purple",
   },
+  Desc: {
+    margin: '2em',
+  }
 });
 
 export default function FeaturedPost(props) {
@@ -27,7 +31,7 @@ export default function FeaturedPost(props) {
   const { post } = props;
 
   return (
-    <Grid item xs={12} md={12}>
+    <Grid item xs={12} md={12} spacing={4}>
       <CardActionArea component="a" href="#">
         <Card className={classes.card}>
           <div className={classes.cardDetails}>
@@ -35,7 +39,7 @@ export default function FeaturedPost(props) {
               <Typography component="h1" variant="h3" color="inherit" gutterBottom className={classes.Title}>
                 {post.title}
               </Typography>
-              <Typography variant="subtitle1" paragraph>
+              <Typography variant="subtitle1" paragraph className={classes.Desc}>
                 {post.description}
               </Typography>
             </CardContent>
