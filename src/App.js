@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home/Home';
-
+import AboutUs from './Components/About Us/AboutUs'
+import Activities from './Components/Activities/Activities'
+import Footer from './Components/Frequently Used/Footer'
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -16,10 +19,16 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Logo from './Images/WIE LOGO.png'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 
 
 const drawerWidth = 240;
@@ -27,6 +36,10 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+  },
+  button:{
+    color:'white',
+    fontWeight:'bold'
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
@@ -97,79 +110,111 @@ function App() {
   };
 
   return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <AppBar
-        position="fixed"
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
-        })}
-        id="Appbar"
-      >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-            id="menuicon"
+    <Router>
+      <div>
+        <div className={classes.root}>
+          <CssBaseline />
+          <AppBar
+            position="fixed"
+            className={clsx(classes.appBar, {
+              [classes.appBarShift]: open,
+            })}
+            id="Appbar"
           >
-            <MenuIcon />
-          </IconButton>
-          <Grid item xs={9} className="Buttons">
-          {["Home", "About Us", "Activities", "Humanitarian", "Members", "Contact"].map((value) => (
-                  <Button
-                    key={value}
-                    value={value.toString()}
-                    color="inherit"
-                    id="Button"
-                    label={value.toString()}>
-                      {value.toString()}
-                    </Button>
-                  
-                ))}
-          
-          </Grid>
-          <Grid item xs={3} className="logoplace">
-          
-          <img src={Logo} alt="logo" className="Logoimg" ></img>
-          </Grid>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        className={classes.drawer}
-        variant="persistent"
-        anchor="left"
-        open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.drawerHeader}>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
+            <Toolbar>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                onClick={handleDrawerOpen}
+                edge="start"
+                className={clsx(classes.menuButton, open && classes.hide)}
+                id="menuicon"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Grid item xs={9} className="Buttons">
+              {["Home", "About Us", "Activities", "Humanitarian", "Members", "Contact"].map((value) => (
+                      <Link
+                        key={value}
+                        value={value.toString()}
+                        to={"/" + value.toString()}
+                        id="Button"
+                        className={classes.button}
+                        label={value.toString()}>
+                          {value.toString()}
+                        
+                        </Link>
+                      
+                    ))}
+              
+              </Grid>
+              <Grid item xs={10} className="logoplace">
+              
+              <img src={Logo} alt="logo" className="Logoimg" ></img>
+              </Grid>
+            </Toolbar>
+          </AppBar>
+          <Drawer
+            className={classes.drawer}
+            variant="persistent"
+            anchor="left"
+            open={open}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+          >
+            <div className={classes.drawerHeader}>
+              <IconButton onClick={handleDrawerClose}>
+                {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+              </IconButton>
+            </div>
+            <Divider />
+            <List>
+              {['Home', 'About Us', 'Activities', 'Humanitarian', 'Members', 'Contact'].map((text, index) => (
+                <ListItem button key={text}>
+                  <Link
+                        key={text}
+                        value={"/"+ text.toString()}
+                        to={ text.toString() }
+                        id="Button"
+                        className={classes.button}
+                        label={text.toString()}>
+                          {text.toString()}
+                        
+                        </Link>
+                </ListItem>
+              ))}
+            </List>
+            </Drawer>
+          <main
+            className={clsx(classes.content, {
+              [classes.contentShift]: open,
+            })}
+            id="Main"
+          >
+            <div className={classes.drawerHeader} />
+            
+              <Switch>
+                <Route path="/About Us">
+                  <AboutUs/>
+                </Route>
+                <Route path="/Activities">
+                  <Activities/>
+                </Route>
+                <Route path="Home">
+                  <home/>
+                </Route>
+                <Route path="/">
+                  <Home/>
+                </Route>
+              </Switch>
+              
+            </main>
+            
         </div>
-        <Divider />
-        <List>
-          {['Home', 'About Us', 'Activities', 'Humanitarian', 'Members', 'Contact'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        </Drawer>
-        <main
-        className={clsx(classes.content, {
-          [classes.contentShift]: open,
-        })}
-        id="Main"
-      >
-        <div className={classes.drawerHeader} />
-        <Home></Home>
-        </main>
-    </div>
+        <Footer></Footer>
+        </div>
+    </Router>
   );
 }
 

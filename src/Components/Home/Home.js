@@ -17,7 +17,10 @@ import Typography from '@material-ui/core/Typography';
 import AdvancedGridList from '../Frequently Used/ManyPics'
 import Album from '../Frequently Used/CardWithPic';
 
+
 //import WIE from '../../Images/WIETitle.png'
+
+
 
 const contentStyle = {
   height: "60%",
