@@ -17,16 +17,20 @@ const useStyles = makeStyles({
  Name:{
     color: 'white',
     fontWeight: 'bold',
-    margin: '1em'
+    margin: '0.5em 0em'
  },
  footer: {
-     backgroundColor: '#471256'
+     backgroundColor: '#471256',
+     display: "flex",
+     justifyContent: 'center'
  },
  link:{
-     color:'white'
+     color:'white',
+     marginLeft: '0.6em'
  },
  contain: {
      padding: '2em',
+     width:"70%",
      justifyContent: 'space-between'
  },
  facebook: {

@@ -20,7 +20,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import Grid from '@material-ui/core/Grid';
-import Logo from './Images/WIE LOGO.png'
+import Logo from './Images/LogoColor.png'
 import {
   BrowserRouter as Router,
   Switch,
