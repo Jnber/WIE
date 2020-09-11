@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: "center"
     },
     Values:{
-       
+       marginTop:"9em",
         alignItems: "center"
     }
 }));
