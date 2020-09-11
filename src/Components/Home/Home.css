@@ -1,6 +1,4 @@
-.App{
-    background-color: rgb(90, 0, 116);
-  }
+
   
   .girlimg{
     position: absolute;
@@ -119,7 +117,7 @@
   }
 
   .Events {
-    color: white;
+    color:#662992;
     padding-top: 2em;
   }
 

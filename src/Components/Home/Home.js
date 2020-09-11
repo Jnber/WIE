@@ -14,7 +14,6 @@ import I4 from '../../Images/4.jpg'
 import I5 from '../../Images/5.jpg'
 import I6 from '../../Images/6.jpg'
 import Typography from '@material-ui/core/Typography';
-import AdvancedGridList from '../Frequently Used/ManyPics'
 import Album from '../Frequently Used/CardWithPic';
 
 
