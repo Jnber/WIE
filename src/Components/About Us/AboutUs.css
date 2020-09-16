@@ -13,3 +13,8 @@
   padding: 5em 10em ;
   
 }
+
+@media only screen and (max-width: 896px) {
+  .cssgrid {
+    display: none;
+  }}

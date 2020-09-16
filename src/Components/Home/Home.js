@@ -222,8 +222,11 @@ function Home() {
               OUR EVENTS
         </Typography>
         <Album cards={Cards}></Album>
-        
+        <Typography component="h1" variant="h2" align="center" className="sponso" gutterBottom>
+           Sponsors and partners
+         </Typography>
        <div className="gridofpartners">
+         
          {partners.map((partner) => (
            <div className="item">
            <img src={partner.image} className="imagepartner"></img>

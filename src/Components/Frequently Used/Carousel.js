@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop:"2em",
       display: "grid",
       gridGap : "1em",
-      gridTemplateColumns: "auto auto auto auto",
+      gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
     },
     media: {
         paddingTop: '100%', // 16:9
