@@ -94,6 +94,9 @@ const useStyles = makeStyles((theme) => ({
     }),
     marginLeft: 0,
   },
+  html :{
+    width: 'fit-content'
+  }
 }));
 
 function App() {
@@ -111,7 +114,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div className={classes.html}>
         <div className={classes.root}>
           <CssBaseline />
           <AppBar

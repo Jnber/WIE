@@ -15,6 +15,12 @@ import I5 from '../../Images/5.jpg'
 import I6 from '../../Images/6.jpg'
 import Typography from '@material-ui/core/Typography';
 import Album from '../Frequently Used/CardWithPic';
+import Carousel1 from '../Frequently Used/Carousel';
+import Delice from '../../Images/delice.png'
+import Nescafe from '../../Images/nescafe.png'
+import IPB from '../../Images/IPB.png'
+import patisserie from '../../Images/patisserie.png'
+
 
 
 //import WIE from '../../Images/WIETitle.png'
@@ -45,6 +51,70 @@ const featuredPost2={
     description:
       'IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science.IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.IEEE INSAT student branch is a branch of IEEE at insat institute, Tunis, Tunisia. Founded on january 2nd, 2013 by 12 students of the institute, it has now about 550 members and by that It breaks the record of the largest student branch in Region 8.IEEE INSAT student branch is a branch of IEEE at insat institute, Tunis, Tunisia. Founded on january 2nd, 2013 by 12 students of the institute, it has now about 550 members and by that It breaks the record of the largest student branch in Region 8.IEEE INSAT student branch is a branch of IEEE at insat institute, Tunis, Tunisia. Founded on january 2nd, 2013 by 12 students of the institute, it has now about 550 members and by that It breaks the record of the largest student branch in Region 8.',
   }
+
+  const partners = [
+    {
+      image: Delice,
+      Name: 'Délice',
+      
+    },
+    {
+      image: Nescafe,
+      Name: 'Nescafé',
+      
+    },
+    {
+      image: IPB,
+      Name: 'IPB',
+      
+    },
+    {
+      image: patisserie,
+      Name: 'Patisserie Maher Mrabet Nabeul',
+      
+    },
+    {
+      image: Delice,
+      Name: 'Délice',
+      
+    },
+    {
+      image: Nescafe,
+      Name: 'Nescafé',
+      
+    },
+    {
+      image: IPB,
+      Name: 'IPB',
+      
+    },
+    {
+      image: patisserie,
+      Name: 'Patisserie Maher Mrabet Nabeul',
+      
+    },
+    {
+      image: Delice,
+      Name: 'Délice',
+      
+    },
+    {
+      image: Nescafe,
+      Name: 'Nescafé',
+      
+    },
+    {
+      image: IPB,
+      Name: 'IPB',
+      
+    },
+    {
+      image: patisserie,
+      Name: 'Patisserie Maher Mrabet Nabeul',
+      
+    },
+   
+  ]
 
 
 const tileData = [
@@ -153,7 +223,14 @@ function Home() {
         </Typography>
         <Album cards={Cards}></Album>
         
-      
+       <div className="gridofpartners">
+         {partners.map((partner) => (
+           <div className="item">
+           <img src={partner.image} className="imagepartner"></img>
+           <h2 className="text">{partner.Name}</h2>
+           </div>
+         ))}
+       </div>
     </div>
     
   );

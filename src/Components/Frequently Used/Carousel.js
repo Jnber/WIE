@@ -1,11 +1,9 @@
-
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
-import { Grid } from '@material-ui/core';
+import { Grid, CardContent, Typography } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 
@@ -13,11 +11,14 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      display: 'flex',
+      
       flexWrap: 'wrap',
       justifyContent: 'space-around',
       overflow: 'hidden',
-      marginTop:"2em"
+      marginTop:"2em",
+      display: "grid",
+      gridGap : "1em",
+      gridTemplateColumns: "auto auto auto auto",
     },
     media: {
         paddingTop: '100%', // 16:9
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        width:"90%",
+        width:"100%",
        
       },
    
@@ -54,16 +55,16 @@ const useStyles = makeStyles((theme) => ({
  * ];
  */
 
-export default function Carousel(props) {
+export default function Carousel1(props) {
   const classes = useStyles();
   const { tileData } = props;
   return (
-    <Grid container className={classes.root} spacing={1}>
+    <div  className={classes.root} >
               <CssBaseline />
 
     
       {tileData.map((tile) => (  
-        <Grid item md={3} sm={6} xs={12}>    
+          
         <Card className={classes.card}>
             <CardHeader
             title={tile.Name}
@@ -74,10 +75,15 @@ export default function Carousel(props) {
             image={tile.image}
             title={tile.Name}
         />
+        <CardContent>
+        <Typography variant="body2" color="textSecondary" component="p" >
+          {tile.desc}
+        </Typography>
+      </CardContent>
         </Card>
-        </Grid>
+      
       ))}
     
-  </Grid>
+  </div>
   );
 }
