@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
 
-h1, h2, h3, h4, h5, h6 {
-  font-family:  'Playfair Display', serif;;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
 }
 
-p, a {
-  font-family: 'inter', sans-serif;
+p,
+a {
+  font-family: "inter", sans-serif;
 }
 
 /* Generic styles */
@@ -14,23 +20,23 @@ html {
 }
 
 .browsers {
-  background-color:#43cac3;
+  background-color: #43cac3;
   text-decoration: none;
   color: white;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   text-align: center;
   display: inline-block;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .browsers:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 /* Styles for the hero image */
 .hero {
   /* Photo by mnm.all on Unsplash */
-  background: url('../../Images/horizon.jpg') center;
+  background: url("../../Images/horizon.jpg") center;
   background-size: cover;
   padding: 4rem 2rem;
   /* grid styles */
@@ -41,6 +47,7 @@ html {
 
 .hero > * {
   color: white;
+  justify-self: self-end;
 }
 
 .hero > h1 {
@@ -55,7 +62,7 @@ html {
 
 .hero > article > a {
   padding: 1rem;
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 }
 
 /* breweries styles */
@@ -70,16 +77,16 @@ html {
 }
 
 .breweries > ul > li {
-  border: 1px solid #E2E2E2;
-  border-radius: .5rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
   background-color: white;
 }
 
 .breweries > ul > li > figure {
   max-height: 220px;
   overflow: hidden;
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
   position: relative;
 }
 
@@ -96,24 +103,24 @@ html {
 
 .breweries > ul > li > figure > figcaption > h3 {
   color: white;
-  padding: .75rem;
+  padding: 0.75rem;
   font-size: 1.25rem;
 }
 
 .breweries > ul > li > p {
   font-size: 1rem;
   line-height: 1.5;
-  padding: 1rem .75rem;
+  padding: 1rem 0.75rem;
   color: #666666;
 }
 
 .breweries > ul > li > a {
-  padding: .5rem 1rem;
-  margin: .5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
 }
 
-.state{
-    background-color: #e0f7fa;
-    text-align: end;
-    margin: 1em 2em ;
+.state {
+  background-color: #e0f7fa;
+  text-align: end;
+  margin: 1em 2em;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home/Home";
 import AboutUs from "./Components/About Us/AboutUs";
@@ -12,7 +12,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
-import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -24,7 +23,6 @@ import Logo from "./Images/LogoColor.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Article from "./Components/Activities/Article";
 import Humanitarian from "./Components/Humanitarian/Humanitarian";
-import Contact from "./Components/Contact/Contact";
 
 const drawerWidth = 240;
 
@@ -90,11 +88,11 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
   html: {
-    width: "100%",
+    width: "fit-content",
   },
 }));
 
-function App() {
+export default function Navbar() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -135,6 +133,7 @@ function App() {
                 "About Us",
                 "Activities",
                 "Humanitarian",
+                "Members",
                 "Contact",
               ].map((value) => (
                 <Link
@@ -174,61 +173,30 @@ function App() {
           </div>
           <Divider />
           <List>
-            {["Home", "About Us", "Activities", "Humanitarian", "Contact"].map(
-              (text, index) => (
-                <ListItem button key={text}>
-                  <Link
-                    key={text}
-                    value={"/" + text.toString()}
-                    to={text.toString()}
-                    id="Button"
-                    className={classes.button}
-                    label={text.toString()}
-                  >
-                    {text.toString()}
-                  </Link>
-                </ListItem>
-              )
-            )}
+            {[
+              "Home",
+              "About Us",
+              "Activities",
+              "Humanitarian",
+              "Members",
+              "Contact",
+            ].map((text, index) => (
+              <ListItem button key={text}>
+                <Link
+                  key={text}
+                  value={"/" + text.toString()}
+                  to={text.toString()}
+                  id="Button"
+                  className={classes.button}
+                  label={text.toString()}
+                >
+                  {text.toString()}
+                </Link>
+              </ListItem>
+            ))}
           </List>
         </Drawer>
-        <main
-          className={clsx(classes.content, {
-            [classes.contentShift]: open,
-          })}
-          id="Main"
-        >
-          <div className={classes.drawerHeader} />
-
-          <Switch>
-            <Route path="/About Us">
-              <AboutUs />
-            </Route>
-            <Route path="/Activities">
-              <Activities />
-            </Route>
-            <Route path="Home">
-              <home />
-            </Route>
-            <Route path="/Humanitarian">
-              <Humanitarian />
-            </Route>
-
-            <Route path="/Article">
-              <Article />
-            </Route>
-            <Route path="/Contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </main>
       </div>
-      <Footer></Footer>
     </div>
   );
 }
-
-export default App;

@@ -11,7 +11,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      
       flexWrap: 'wrap',
       justifyContent: 'space-around',
       overflow: 'hidden',
