@@ -36,7 +36,7 @@ html {
 /* Styles for the hero image */
 .hero {
   /* Photo by mnm.all on Unsplash */
-  background: url("../../Images/horizon.jpg") center;
+  background: url("../Images/horizon.jpg") center;
   background-size: cover;
   padding: 4rem 2rem;
   /* grid styles */

@@ -1,6 +1,5 @@
 import React from "react";
 import "../Activities/Activities.css";
-import { Link } from "@material-ui/core";
 
 export default function ManyArticles(props) {
   const { events } = props;
@@ -8,7 +7,7 @@ export default function ManyArticles(props) {
     <section class="breweries" id="breweries">
       <ul>
         {events.map((e) => (
-          <li>
+          <li key={e.titlee}>
             <figure>
               <img src={e.img} alt="Several hands holding beer glasses"></img>
               <figcaption>

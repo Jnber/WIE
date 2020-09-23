@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     backgroundColor: "rgb(90, 0, 110)",
     color: theme.palette.common.white,
-    marginBottom: theme.spacing(4),
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
