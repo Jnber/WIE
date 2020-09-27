@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import Girl from "../Images/Girl.webp";
 
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     textAlign: "center",
-    marginBottom: "2em",
+    marginBottom: "5em",
   },
   Desc: {
     textAlign: "justify",
@@ -40,6 +41,14 @@ const useStyles = makeStyles((theme) => ({
       zIndex: 9,
     },
   },
+
+  hello: {
+    width: "70%",
+  },
+
+  girl: {
+    padding: "0em",
+  },
 }));
 
 export default function MainFeaturedPost(props) {
@@ -51,7 +60,7 @@ export default function MainFeaturedPost(props) {
       {/* Increase the priority of the hero background image */}
 
       <div className={classes.overlay} />
-      <Grid container>
+      <Grid container spacing={5}>
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography
@@ -72,6 +81,9 @@ export default function MainFeaturedPost(props) {
               {post.description}
             </Typography>
           </div>
+        </Grid>
+        <Grid item className={classes.girl}>
+          <img src={Girl} alt="girlthinking" className={classes.hello}></img>
         </Grid>
       </Grid>
     </Paper>

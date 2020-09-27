@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import Girl from "../Images/Girl.webp";
 import Grid from "@material-ui/core/Grid";
 import MainFeaturedPost from "../Frequently Used/MainFeaturedPost";
 import FeaturedPost from "../Frequently Used/FeaturedPost";
@@ -24,7 +23,6 @@ import {
 function Home() {
   return (
     <div className="App">
-      <img src={Girl} alt="girlthinking" className="girlimg"></img>
       <MainFeaturedPost container post={featuredPost} />
 
       <div className="win">
@@ -63,7 +61,7 @@ function Home() {
       </Typography>
       <div className="gridofpartners">
         {partners.map((partner) => (
-          <div className="item">
+          <div className="item" key={partner.Name}>
             <img
               src={partner.image}
               className="imagepartner"
