@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home/Home";
 import AboutUs from "./Components/About Us/AboutUs";
 import Activities from "./Components/Activities/Activities";
+import AlreadyDoneEvents from "./Components/Activities/AlreadyDoneEvents";
 import Footer from "./Components/Frequently Used/Footer";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -24,6 +25,7 @@ import { Switch, Route, Link } from "react-router-dom";
 import Article from "./Components/Activities/Article";
 import Humanitarian from "./Components/Humanitarian/Humanitarian";
 import Contact from "./Components/Contact/Contact";
+import Awards from "./Components/Awards/Awards";
 
 const drawerWidth = 240;
 
@@ -67,14 +69,14 @@ const useStyles = makeStyles((theme) => ({
   drawerHeader: {
     display: "flex",
     alignItems: "center",
-    padding: theme.spacing(0, 1),
+
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: "flex-end",
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    //padding: theme.spacing(3),
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -134,13 +136,14 @@ function App() {
                 "About Us",
                 "Activities",
                 "Humanitarian",
+                "Awards",
                 "Contact",
               ].map((value) => (
                 <Link
                   key={value}
                   value={value.toString()}
                   to={"/" + value.toString()}
-                  id="Button"
+                  id="ButtonNav"
                   className={classes.button}
                   label={value.toString()}
                 >
@@ -173,22 +176,27 @@ function App() {
           </div>
           <Divider />
           <List>
-            {["Home", "About Us", "Activities", "Humanitarian", "Contact"].map(
-              (text, index) => (
-                <ListItem button key={text}>
-                  <Link
-                    key={text}
-                    value={"/" + text.toString()}
-                    to={text.toString()}
-                    id="Button"
-                    className={classes.button}
-                    label={text.toString()}
-                  >
-                    {text.toString()}
-                  </Link>
-                </ListItem>
-              )
-            )}
+            {[
+              "Home",
+              "About Us",
+              "Activities",
+              "Humanitarian",
+              "Awards",
+              "Contact",
+            ].map((text, index) => (
+              <ListItem button key={text}>
+                <Link
+                  key={text}
+                  value={"/" + text.toString()}
+                  to={text.toString()}
+                  id="Button"
+                  className={classes.button}
+                  label={text.toString()}
+                >
+                  {text.toString()}
+                </Link>
+              </ListItem>
+            ))}
           </List>
         </Drawer>
         <main
@@ -216,6 +224,12 @@ function App() {
             <Route path="/Article">
               <Article />
             </Route>
+            <Route path="/AlreadyDoneEvents">
+              <AlreadyDoneEvents />
+            </Route>
+            <Route path="/Awards">
+              <Awards />
+            </Route>
             <Route path="/Contact">
               <Contact />
             </Route>
@@ -223,9 +237,9 @@ function App() {
               <Home />
             </Route>
           </Switch>
+          <Footer></Footer>
         </main>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

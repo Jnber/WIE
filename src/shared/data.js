@@ -47,38 +47,6 @@ export const partners = [
     image: patisserie,
     Name: "Patisserie Maher Mrabet Nabeul",
   },
-  {
-    image: Delice,
-    Name: "Délice",
-  },
-  {
-    image: Nescafe,
-    Name: "Nescafé",
-  },
-  {
-    image: IPB,
-    Name: "IPB",
-  },
-  {
-    image: patisserie,
-    Name: "Patisserie Maher Mrabet Nabeul",
-  },
-  {
-    image: Delice,
-    Name: "Délice",
-  },
-  {
-    image: Nescafe,
-    Name: "Nescafé",
-  },
-  {
-    image: IPB,
-    Name: "IPB",
-  },
-  {
-    image: patisserie,
-    Name: "Patisserie Maher Mrabet Nabeul",
-  },
 ];
 
 export const tileData = [

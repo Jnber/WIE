@@ -15,7 +15,6 @@ export default function ManyArticles(props) {
               </figcaption>
             </figure>
             <p>{e.desc}</p>
-            <p className="state">{e.state}</p>
             <a href="/Article" className="browsers" component={e}>
               Show more
             </a>

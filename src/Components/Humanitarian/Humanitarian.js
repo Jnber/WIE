@@ -15,6 +15,7 @@ import { events as Humanitarianevents } from "../../shared/data";
 const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
+    padding: "2em",
   },
   paper: {
     marginTop: theme.spacing(9),
@@ -67,7 +68,6 @@ export default function Humanitarian() {
                   fullWidth
                   id="firstName"
                   label="First Name"
-                  autoFocus
                 />
               </Grid>
               <Grid item xs={12} sm={6}>

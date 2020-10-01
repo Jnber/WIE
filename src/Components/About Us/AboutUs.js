@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   IEEE: {
-    color: "#43cac3",
+    color: "#662992",
     marginBottom: "1em",
     fontFamily: "Crimson Text",
     fontWeight: "bold",
@@ -59,14 +59,27 @@ const useStyles = makeStyles((theme) => ({
   team: {
     display: "contents",
     textAlign: "left",
+    margin: "1em",
   },
   values: {
     width: "50%",
     alignItems: "center",
+    alignSelf: "center",
   },
   Valuess: {
     marginTop: "9em",
     alignItems: "center",
+  },
+  valuetext: {
+    backgroundColor: "white",
+    margin: "1em 0em",
+    padding: "1em",
+  },
+  oh: {
+    alignItems: "center",
+    backgroundColor: "white",
+    marginBottom: "0.5em",
+    borderRadius: "5px",
   },
 }));
 
@@ -108,16 +121,16 @@ export default function AboutUs() {
           </p>
         </Grid>
       </Grid>
-      <Grid container md={10} className={classes.team}>
+      <div className={classes.team}>
         <h1 className={classes.Title}> Our Team</h1>
         <Carousel1 tileData={tileDataAboutUs}></Carousel1>
-      </Grid>
+      </div>
       <Grid container className={classes.Valuess}>
         <Grid item md={4}>
           <h1 className={classes.IEEE}> Our values</h1>
         </Grid>
         <Grid item md={7}>
-          <Grid container>
+          <Grid container className={classes.oh}>
             <Grid item md={5}>
               <img
                 src={thumbnail6}
@@ -125,33 +138,41 @@ export default function AboutUs() {
                 alt="picure"
               ></img>
             </Grid>
-            <Grid itme md={5}>
+            <Grid itme md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Commitment</h1>
               <p className={classes.paragraph}>
                 , consectetuer adipiscing elit, sed diam nonummy nibh euismod
                 tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem
-                ipsum dolor sit amet, consectetuer adipiscing elit. <br></br>{" "}
-                _________________________________________
+                ipsum dolor sit amet, consectetuer adipiscing elit.
               </p>
             </Grid>
-            <hr></hr>
+          </Grid>
+          <Grid container className={classes.oh}>
             <Grid item md={5}>
-              <img src={thumbnail6} className={classes.values} alt="hey"></img>
+              <img
+                src={thumbnail6}
+                className={classes.values}
+                alt="picure"
+              ></img>
             </Grid>
-            <Grid itme md={5}>
+            <Grid itme md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Commitment</h1>
               <p className={classes.paragraph}>
                 , consectetuer adipiscing elit, sed diam nonummy nibh euismod
                 tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem
-                ipsum dolor sit amet, consectetuer adipiscing elit.<br></br>{" "}
-                _________________________________________
+                ipsum dolor sit amet, consectetuer adipiscing elit.
               </p>
             </Grid>
-            <hr></hr>
+          </Grid>
+          <Grid container className={classes.oh}>
             <Grid item md={5}>
-              <img src={thumbnail6} className={classes.values} alt="hola"></img>
+              <img
+                src={thumbnail6}
+                className={classes.values}
+                alt="picure"
+              ></img>
             </Grid>
-            <Grid itme md={5}>
+            <Grid itme md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Commitment</h1>
               <p className={classes.paragraph}>
                 , consectetuer adipiscing elit, sed diam nonummy nibh euismod

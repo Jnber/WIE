@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
-}
-
-p,
-a {
-  font-family: "inter", sans-serif;
-}
-
 /* Generic styles */
 html {
   scroll-behavior: smooth;
@@ -36,7 +22,12 @@ html {
 /* Styles for the hero image */
 .hero {
   /* Photo by mnm.all on Unsplash */
-  background: url("../Images/horizon.jpg") center;
+  background-image: linear-gradient(
+    to top,
+    #fdcbf1 0%,
+    #fdcbf1 1%,
+    #a89dac 100%
+  );
   background-size: cover;
   padding: 4rem 2rem;
   /* grid styles */
@@ -119,8 +110,9 @@ html {
   margin: 0.5rem;
 }
 
-.state {
-  background-color: #e0f7fa;
-  text-align: end;
-  margin: 1em 2em;
+.soon {
+  text-align: center;
+  color: #662992;
+  margin: 1em;
+  font-size: xxx-large;
 }

@@ -1,9 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
 import Girl from "../Images/Girl.webp";
 
 const useStyles = makeStyles((theme) => ({
@@ -16,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "center",
     textAlign: "center",
     marginBottom: "5em",
+    display: "grid",
+    gridGap: "1em",
+    /*grid-template-columns: auto auto auto auto;*/
+    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
   },
   Desc: {
     textAlign: "justify",
@@ -29,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
   },
   Title: {
-    fontFamily: "sans-serif",
     color: "#e8667b",
   },
   mainFeaturedPostContent: {
@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
     [theme.breakpoints.up("md")]: {
       padding: theme.spacing(6),
-      paddingRight: 0,
       zIndex: 9,
     },
   },
@@ -56,37 +55,25 @@ export default function MainFeaturedPost(props) {
   const { post } = props;
 
   return (
-    <Paper className={classes.mainFeaturedPost}>
+    <div className={classes.mainFeaturedPost}>
       {/* Increase the priority of the hero background image */}
 
-      <div className={classes.overlay} />
-      <Grid container spacing={5}>
-        <Grid item md={6}>
-          <div className={classes.mainFeaturedPostContent}>
-            <Typography
-              component="h1"
-              variant="h3"
-              color="inherit"
-              gutterBottom
-              className={classes.Title}
-            >
-              {post.title}
-            </Typography>
-            <Typography
-              variant="h5"
-              color="inherit"
-              paragraph
-              className={classes.Desc}
-            >
-              {post.description}
-            </Typography>
-          </div>
-        </Grid>
-        <Grid item className={classes.girl}>
-          <img src={Girl} alt="girlthinking" className={classes.hello}></img>
-        </Grid>
-      </Grid>
-    </Paper>
+      <div className={classes.mainFeaturedPostContent}>
+        <h1
+          component="h1"
+          variant="h3"
+          color="inherit"
+          className={classes.Title}
+        >
+          {post.title}
+        </h1>
+        <p variant="h5" color="inherit" className={classes.Desc}>
+          {post.description}
+        </p>
+      </div>
+
+      <img src={Girl} alt="girlthinking" className={classes.hello}></img>
+    </div>
   );
 }
 

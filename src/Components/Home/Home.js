@@ -11,7 +11,6 @@ import I3 from "../Images/3.jpg";
 import I4 from "../Images/4.jpg";
 import I5 from "../Images/5.jpg";
 import I6 from "../Images/6.jpg";
-import Typography from "@material-ui/core/Typography";
 import Album from "../Frequently Used/CardWithPic";
 import {
   featuredPost,
@@ -22,7 +21,7 @@ import {
 
 function Home() {
   return (
-    <div className="App">
+    <div>
       <MainFeaturedPost container post={featuredPost} />
 
       <div className="win">
@@ -35,30 +34,18 @@ function Home() {
         </Carousel>
       </div>
 
-      <Grid container spacing={4} className="posts">
-        <Grid item spacing={4} id="articles" xs={12} md={10}>
+      <Grid container className="posts">
+        <Grid item id="articles" xs={12} md={10}>
           <FeaturedPost key={featuredPost1.title} post={featuredPost1} />
         </Grid>
       </Grid>
-      <Typography
-        component="h1"
-        variant="h2"
-        align="center"
-        className="Events"
-        gutterBottom
-      >
+      <h1 component="h1" variant="h2" align="center" className="Events">
         OUR EVENTS
-      </Typography>
+      </h1>
       <Album cards={cards}></Album>
-      <Typography
-        component="h1"
-        variant="h2"
-        align="center"
-        className="sponso"
-        gutterBottom
-      >
+      <h1 component="h1" variant="h2" align="center" className="sponso">
         Sponsors and partners
-      </Typography>
+      </h1>
       <div className="gridofpartners">
         {partners.map((partner) => (
           <div className="item" key={partner.Name}>
