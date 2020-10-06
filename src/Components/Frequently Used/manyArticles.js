@@ -4,7 +4,7 @@ import "../Activities/Activities.css";
 export default function ManyArticles(props) {
   const { events } = props;
   return (
-    <section class="breweries" id="breweries">
+    <section className="breweries" id="breweries">
       <ul>
         {events.map((e) => (
           <li key={e.titlee}>

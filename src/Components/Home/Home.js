@@ -16,6 +16,7 @@ import {
   featuredPost,
   featuredPost1,
   partners,
+  sponsors,
   cards,
 } from "../../shared/data";
 
@@ -24,6 +25,43 @@ function Home() {
     <div>
       <MainFeaturedPost container post={featuredPost} />
 
+      <div className="sponsors">
+        <h1 component="h1" variant="h2" align="center" className="sponso">
+          Sponsors
+        </h1>
+        <div className="gridofpartners">
+          {sponsors.map((sponsor) => (
+            <div className="item" key={sponsor.Name}>
+              <img
+                src={sponsor.image}
+                className="imagepartner"
+                alt="partners"
+              ></img>
+              <h2 className="text">{sponsor.Name}</h2>
+            </div>
+          ))}
+        </div>
+        <h1 component="h1" variant="h2" align="center" className="sponso">
+          Partners
+        </h1>
+        <div className="gridofpartners">
+          {partners.map((partner) => (
+            <div className="item" key={partner.Name}>
+              <img
+                src={partner.image}
+                className="imagepartner"
+                alt="partners"
+              ></img>
+              <h2 className="text">{partner.Name}</h2>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Grid container className="posts">
+        <Grid item id="articles" xs={12}>
+          <FeaturedPost key={featuredPost1.title} post={featuredPost1} />
+        </Grid>
+      </Grid>
       <div className="win">
         <Carousel className="Carouselitems">
           {[I1, I2, I3, I4, I5, I6].map((value) => (
@@ -33,33 +71,13 @@ function Home() {
           ))}
         </Carousel>
       </div>
-
-      <Grid container className="posts">
-        <Grid item id="articles" xs={12} md={10}>
-          <FeaturedPost key={featuredPost1.title} post={featuredPost1} />
-        </Grid>
-      </Grid>
-      <h1 component="h1" variant="h2" align="center" className="Events">
-        OUR EVENTS
-      </h1>
-      <Album cards={cards}></Album>
-      <h1 component="h1" variant="h2" align="center" className="sponso">
-        Sponsors and partners
-      </h1>
-      <div className="gridofpartners">
-        {partners.map((partner) => (
-          <div className="item" key={partner.Name}>
-            <img
-              src={partner.image}
-              className="imagepartner"
-              alt="partners"
-            ></img>
-            <h2 className="text">{partner.Name}</h2>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }
 
 export default Home;
+
+/*<h1 component="h1" variant="h2" align="center" className="Events">
+OUR EVENTS
+</h1>
+<Album cards={cards}></Album>*/

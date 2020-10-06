@@ -10,6 +10,7 @@ const useStyles = makeStyles({
   card: {
     display: "flex",
     margin: "1em",
+    backgroundColor: "rgba(0,0,0,0)",
   },
   cardDetails: {
     flex: 1,
@@ -29,7 +30,7 @@ export default function FeaturedPost(props) {
 
   return (
     <Grid item xs={12} md={12}>
-      <Card className={classes.card}>
+      <div className={classes.card}>
         <div className={classes.cardDetails}>
           <CardContent>
             <h1
@@ -45,7 +46,7 @@ export default function FeaturedPost(props) {
             </Typography>
           </CardContent>
         </div>
-      </Card>
+      </div>
     </Grid>
   );
 }

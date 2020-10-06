@@ -2,11 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Girl from "../Images/Girl.webp";
+import Fond from "../Images/Fond.png";
 
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
     position: "relative",
-    backgroundColor: "rgb(90, 0, 110)",
+    backgroundImage: `url(${Fond})`,
+    backgroundSize: "cover",
+    //backgroundColor: "rgb(90, 0, 110)",
     color: theme.palette.common.white,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -15,11 +18,13 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "5em",
     display: "grid",
     gridGap: "1em",
+    alignItems: "center",
     /*grid-template-columns: auto auto auto auto;*/
     gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+    height: "80vh",
   },
   Desc: {
-    textAlign: "justify",
+    //textAlign: "justify",
     fontSize: "medium",
   },
   overlay: {

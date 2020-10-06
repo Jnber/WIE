@@ -111,13 +111,11 @@ export default function AboutUs() {
         <Grid item md={4}>
           <h1 className={classes.Story}>Our story</h1>
           <p className={classes.paragraph}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-            dolore magna aliquam erat volutpat
+            IEEE WIE INSAT was established in 2016 and its main goal is to
+            reinforce women engineers through different educational and
+            technical activities . By bringing together a community of men and
+            women of IEEE members , they will work together on several training
+            and projects for the benefit of humanity.
           </p>
         </Grid>
       </Grid>

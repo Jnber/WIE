@@ -5,6 +5,12 @@
 
 #menuicon {
   display: none;
+  width: 90%;
+  justify-content: end;
+}
+
+.Buttons {
+  width: 90%;
 }
 
 @media only screen and (max-width: 896px) {
@@ -52,11 +58,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Quicksand", sans-serif;
   color: #662992;
 }
 
 p,
 a {
-  font-family: "inter", sans-serif;
+  /*font-family: "inter", sans-serif;*/
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
 }

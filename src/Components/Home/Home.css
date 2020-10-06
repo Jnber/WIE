@@ -104,20 +104,30 @@
 
 .posts {
   justify-content: center;
-  padding: 2em;
+  background-image: url("../Images/IEEEE.png");
+  margin-bottom: 10vh;
+  background-position-x: left;
+  background-position-y: bottom;
 }
 
 .gridofpartners {
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: hidden;
-  margin: 2em 5em;
+
   display: grid;
   grid-gap: 1em;
   /*grid-template-columns: auto auto auto auto;*/
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 2em;
+}
+.sponsors {
+  margin: 2em 7em;
+  padding: 2vh 5vw;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  margin-top: -17vh;
+  z-index: 20;
+  position: relative;
 }
 
 .imagepartner {
@@ -149,5 +159,6 @@
 
 .sponso {
   color: #662992;
-  font-family: classic;
+  font-size: xx-large;
+  padding: 3vh;
 }

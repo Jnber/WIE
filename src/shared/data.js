@@ -17,6 +17,18 @@ import thumbnail6 from "../Components/Images/6.png";
 import thumbnail7 from "../Components/Images/7.png";
 import thumbnail8 from "../Components/Images/8.png";
 import image from "../Components/Images/2.jpg";
+import wizzlabs from "../Components/Images/Wizzlabs.png";
+import c from "../Components/Images/4cinsat.png";
+import acm from "../Components/Images/acm.png";
+import atacs from "../Components/Images/atamcs.jpg";
+import cine from "../Components/Images/cineradio.png";
+import cs from "../Components/Images/Cs.png";
+import embs from "../Components/Images/EMBS.png";
+import IAS from "../Components/Images/IAS.png";
+import Press from "../Components/Images/insatpress.png";
+import PES from "../Components/Images/PES.png";
+import RAS from "../Components/Images/RAS.png";
+import selima from "../Components/Images/selima.jpg";
 
 export const featuredPost1 = {
   title: "IEEE INSAT",
@@ -27,10 +39,10 @@ export const featuredPost = {
   title: "WIE IEEE",
 
   description:
-    "IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science.",
+    "IEEE WIE is one of the world’s leaders in changing the face of engineering. Our global network connects nearly 20,000 members in over 100 countries to advance women in technology at all points in their life and career. IEEE WIE members make lifelong friendships, acquire influential mentors, and make a difference for the benefit of humanity.",
 };
 
-export const partners = [
+export const sponsors = [
   {
     image: Delice,
     Name: "Délice",
@@ -46,6 +58,49 @@ export const partners = [
   {
     image: patisserie,
     Name: "Patisserie Maher Mrabet Nabeul",
+  },
+  {
+    image: wizzlabs,
+    Name: "Wizzlabs",
+  },
+];
+
+export const partners = [
+  {
+    image: acm,
+    Name: "ACM",
+  },
+  {
+    image: c,
+    Name: "4C INSAT",
+  },
+  {
+    image: atacs,
+    Name: "Atamcs",
+  },
+  {
+    image: cine,
+    Name: "Ciné Radio INSAT",
+  },
+  {
+    image: cs,
+    Name: "CS",
+  },
+  {
+    image: embs,
+    Name: "EMBS",
+  },
+  {
+    image: IAS,
+    Name: "IAS",
+  },
+  {
+    image: RAS,
+    Name: "RAS",
+  },
+  {
+    image: selima,
+    Name: "Association Selima",
   },
 ];
 
@@ -133,28 +188,34 @@ export const tileDataAboutUs = [
     Name: "Aya Jaidi",
     Post: "Chairwoman",
     desc:
-      "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+      "“Define success on your own terms, achieve it by your own rules, and build a life you’re proud to live.",
+    fb: "https://www.facebook.com/ayouta.jeaidi/",
+    linkedin: "https://www.linkedin.com/in/jeaidi-aya-5418a2194/",
   },
   {
     image: thumbnail5,
     Name: "Nawel Bouaziz",
     Post: "Vice Chairwoman",
-    desc:
-      "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+    desc: "",
+    fb: "https://www.facebook.com/nawel.bouaziz1/",
+    linkedin: "https://www.linkedin.com/in/nawel-bouaziz-457896198/",
   },
   {
     image: thumbnail4,
     Name: "Maissa El Gharbi",
     Post: "Treasurer/Sponsoring Manager",
-    desc:
-      "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+    desc: "",
+    fb: "https://www.facebook.com/maissa.elgharbi.14/",
+    linkedin: "https://www.linkedin.com/in/maissa-el-gharbi-80346b195/",
   },
   {
     image: thumbnail3,
     Name: "Tiba Ouerfelli",
     Post: "General Secretary",
     desc:
-      "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+      "Whether you succeed or not is irrelevant, there is no such thing.  Making your unknown known is the important thing.",
+    fb: "https://www.facebook.com/tiba.ouerfelli/",
+    linkedin: "https://www.linkedin.com/in/maissa-el-gharbi-80346b195/",
   },
 
   {
@@ -162,29 +223,34 @@ export const tileDataAboutUs = [
     Name: "Essia Ben Hamida",
     Post: "Webmaster",
     desc:
-      "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+      "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.",
+    fb: "https://www.facebook.com/people/Essia-Ben-Hamida/",
+    linkedin: "https://www.linkedin.com/in/essia-b-a04350115/",
   },
   {
     image: thumbnail8,
     Name: "Manel Reguima",
     Post: "Human Ressources Manager",
-    desc:
-      "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+    desc: "",
+    fb: "https://www.facebook.com/manel.reghima",
+    linkedin: "https://www.linkedin.com/in/manel-reghima-8449721a6/",
   },
 
   {
     image: thumbnail1,
     Name: "Chaima Soui",
     Post: "Training Manager",
-    desc:
-      "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+    desc: "",
+    fb: "https://www.facebook.com/chaima.soui",
+    linkedin: "https://www.linkedin.com/in/chaima-soui-591740197/",
   },
   {
     image: thumbnail7,
     Name: "Oumaima Kboubi",
     Post: "Media/Communication Manager",
-    desc:
-      "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+    desc: "",
+    fb: "https://www.facebook.com/oumaima.kaboubi1",
+    linkedin: "",
   },
 ];
 
@@ -192,15 +258,10 @@ export const events = [
   {
     titlee: "Star Program",
     img: image,
-    state: "done",
     desc:
-      "Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.",
-    paragraph1:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      "The main goal of the STAR PROGRAM was to promote engineering to high schoolers and encourage them to choose the path of engineering.      ",
     paragraph2:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
-    paragraph3:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      "Indeed we introduced multiple workshops including different fields in engineering such as chemistry , biology, robotics , energy… However as much as the workshops included the professional part of the event, we did entertain the pupils by giving rests between every workshop and by bringing foods and drinks and of course some music to boost the mood .",
     saying: "Hey Hey We did it",
   },
   {
@@ -244,5 +305,28 @@ export const events = [
     paragraph3:
       "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
     saying: "Hey Hey We did it",
+  },
+];
+
+export const awards = [
+  {
+    title: "Star Program",
+    desc: "Best Tunisia video",
+    date: "2016",
+    position: "left",
+    img: thumbnail2,
+  },
+  {
+    title: "Star Program",
+    desc: "Best Tunisia video",
+    date: "2017",
+    position: "right",
+    img: thumbnail2,
+  },
+  {
+    title: "Outstanding IEEE WIE student affinity group award",
+    date: "2018",
+    position: "left",
+    img: thumbnail2,
   },
 ];

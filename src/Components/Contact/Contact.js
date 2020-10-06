@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
     alignItems: "center",
+    flexWrap: "wrap",
+    overflow: "hidden",
+    margin: "2em 5em",
+    gridGap: "1em",
   },
   soustit: {
     color: "#43cac3",

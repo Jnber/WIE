@@ -26,6 +26,7 @@ import Article from "./Components/Activities/Article";
 import Humanitarian from "./Components/Humanitarian/Humanitarian";
 import Contact from "./Components/Contact/Contact";
 import Awards from "./Components/Awards/Awards";
+import Volunteering from "./Components/Volunteering/volunteering";
 
 const drawerWidth = 240;
 
@@ -92,6 +93,7 @@ const useStyles = makeStyles((theme) => ({
   },
   html: {
     width: "100%",
+    //overflow: "hidden",
   },
 }));
 
@@ -130,12 +132,13 @@ function App() {
             >
               <MenuIcon />
             </IconButton>
-            <Grid item xs={9} className="Buttons">
+            <Grid item className="Buttons">
               {[
                 "Home",
                 "About Us",
                 "Activities",
                 "Humanitarian",
+                "Volunteering",
                 "Awards",
                 "Contact",
               ].map((value) => (
@@ -151,7 +154,7 @@ function App() {
                 </Link>
               ))}
             </Grid>
-            <Grid item xs={10} className="logoplace">
+            <Grid item className="logoplace">
               <img src={Logo} alt="logo" className="Logoimg"></img>
             </Grid>
           </Toolbar>
@@ -181,6 +184,7 @@ function App() {
               "About Us",
               "Activities",
               "Humanitarian",
+              "Volunteering",
               "Awards",
               "Contact",
             ].map((text, index) => (
@@ -226,6 +230,9 @@ function App() {
             </Route>
             <Route path="/AlreadyDoneEvents">
               <AlreadyDoneEvents />
+            </Route>
+            <Route path="/Volunteering">
+              <Volunteering></Volunteering>
             </Route>
             <Route path="/Awards">
               <Awards />
