@@ -203,6 +203,7 @@ function App() {
             ))}
           </List>
         </Drawer>
+        <scroll direction="Up"></scroll>
         <main
           className={clsx(classes.content, {
             [classes.contentShift]: open,

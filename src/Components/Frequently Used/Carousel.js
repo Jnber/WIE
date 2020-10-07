@@ -31,6 +31,9 @@ const useStyles = makeStyles(() => ({
     textAlign: "right",
     margin: "1vh 1vw",
   },
+  description: {
+    height: "5em",
+  },
 }));
 
 /**
@@ -68,7 +71,12 @@ export default function Carousel1(props) {
             title={tile.Name}
           />
           <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              className={classes.description}
+            >
               {tile.desc}
             </Typography>
             <div className={classes.links}>

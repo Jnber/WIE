@@ -204,7 +204,8 @@ export const tileDataAboutUs = [
     image: thumbnail4,
     Name: "Maissa El Gharbi",
     Post: "Treasurer/Sponsoring Manager",
-    desc: "",
+    desc:
+      "starting your own path is always difficult, but reaching your goals is definetely worth it",
     fb: "https://www.facebook.com/maissa.elgharbi.14/",
     linkedin: "https://www.linkedin.com/in/maissa-el-gharbi-80346b195/",
   },

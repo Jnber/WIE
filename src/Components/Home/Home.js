@@ -11,13 +11,11 @@ import I3 from "../Images/3.jpg";
 import I4 from "../Images/4.jpg";
 import I5 from "../Images/5.jpg";
 import I6 from "../Images/6.jpg";
-import Album from "../Frequently Used/CardWithPic";
 import {
   featuredPost,
   featuredPost1,
   partners,
   sponsors,
-  cards,
 } from "../../shared/data";
 
 function Home() {
@@ -62,7 +60,28 @@ function Home() {
           <FeaturedPost key={featuredPost1.title} post={featuredPost1} />
         </Grid>
       </Grid>
-      <div className="win">
+      <div className="layout">
+        <div className="ktiba">
+          <h1>Yes we are doing it!</h1>
+          <p>
+            The number of our members is increasing each you and our events are
+            being well planned and structured with a clear goal of benifit for
+            each person either participatring or organizing the event,
+            workshop...
+          </p>
+          <div>
+            <h1>21</h1>
+            <h5>Members</h5>
+          </div>
+          <div>
+            <h1>15</h1>
+            <h5>Events</h5>
+          </div>
+          <div>
+            <h1>+1000</h1>
+            <h5>Participants</h5>
+          </div>
+        </div>
         <Carousel className="Carouselitems">
           {[I1, I2, I3, I4, I5, I6].map((value) => (
             <div key={value.toString()}>

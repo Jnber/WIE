@@ -21,6 +21,7 @@ const useStyles = makeStyles({
   },
   Desc: {
     margin: "2em",
+    textAlign: "center",
   },
 });
 

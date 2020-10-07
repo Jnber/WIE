@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Pic3 from "../Images/3.jpg";
-import Balade from "../Images/Balade04.png";
+import Balade from "../Images/Balade1.png";
 import Carousel1 from "../Frequently Used/Carousel";
 import thumbnail6 from "../Images/6.png";
 import thumbnail7 from "../Images/7.png";
@@ -28,9 +28,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
   },
   Title: {
-    color: "#11111",
     margin: "1em 0em 0em",
-    fontFamily: "Crimson Text",
     fontWeight: "bold",
   },
   AboutUs: {
@@ -39,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
   IEEE: {
     color: "#662992",
     marginBottom: "1em",
-    fontFamily: "Crimson Text",
     fontWeight: "bold",
   },
   Pictures: {

@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     backgroundImage: `url(${Fond})`,
     backgroundSize: "cover",
+    justifyItems: "center",
     //backgroundColor: "rgb(90, 0, 110)",
     color: theme.palette.common.white,
-    backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     textAlign: "center",
@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     gridGap: "1em",
     alignItems: "center",
     /*grid-template-columns: auto auto auto auto;*/
-    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-    height: "80vh",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+    minHeight: "80vh",
   },
   Desc: {
     //textAlign: "justify",

@@ -1,113 +1,24 @@
-.Title {
-  font-size: 3em;
-  font-family: sans-serif;
-  color: #e8667b;
-  text-align: center;
-}
-
-#articles {
-  margin-bottom: 2em;
-}
-
 @media only screen and (min-width: 960px) {
   .Carouselitems {
     width: 60%;
   }
-}
-.win {
-  text-align: -webkit-center;
-}
-
-@media only screen and (max-width: 960px) {
-  .girlimg {
-    display: none;
+  .ktiba {
+    max-width: 50vw;
   }
-}
-
-@media only screen and (max-width: 850px) {
-  .welcomeParagraph {
-    padding: 0.5em;
+  .Carouselitems {
+    max-width: 40vw;
   }
-}
-
-.welcomeSection {
-  justify-content: center;
-  align-items: center;
-  padding: 2em 1em;
-  text-align: center;
-}
-.welcomeSection2 {
-  justify-content: center;
-  align-items: center;
-  padding: 2em 1em;
-  margin: 0em 2em;
-  text-align: center;
-  background-color: white;
-}
-
-.IEEESection {
-  text-align: center;
-  justify-content: center;
-}
-
-.Title1 {
-  font-size: 3em;
-  font-family: sans-serif;
-  color: rgb(94, 27, 123);
-  text-align: center;
-  margin-right: 2em;
-}
-
-.TitleIEEE {
-  width: -webkit-fill-available;
-}
-
-.IEEEParagraph {
-  font-size: 1.5em;
-  margin: 0.05em 5em;
-  text-align: justify;
-}
-
-.WIESection {
-  justify-content: center;
-  align-items: center;
-  padding: 2em 1em;
-  margin: 1em 2em;
-  text-align: center;
-  background-color: white;
-}
-
-.EventsSection {
-  justify-content: center;
-  align-items: center;
-  padding: 2em 1em;
-  margin: 1em 2em;
-  text-align: center;
-}
-
-.Title2 {
-  font-size: 5em;
-  font-family: sans-serif;
-  color: #e8667b;
-  text-align: left;
-  margin-right: 2em;
-}
-.picsPlacement {
-  justify-content: center;
-  align-self: center;
-}
-
-.Events {
-  color: #662992;
-  padding-top: 2em;
 }
 
 .posts {
   justify-content: center;
   background-image: url("../Images/IEEEE.png");
-  margin-bottom: 10vh;
+  margin: 10vh 0vh;
   background-position-x: left;
   background-position-y: bottom;
+  margin-top: -10vh;
+  min-height: 90vh;
+  align-content: center;
 }
 
 .gridofpartners {
@@ -121,7 +32,7 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .sponsors {
-  margin: 2em 7em;
+  margin: 2em 15vw;
   padding: 2vh 5vw;
   background-color: white;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
@@ -131,8 +42,8 @@
 }
 
 .imagepartner {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 60%;
   margin-bottom: 1em;
 }
 
@@ -161,4 +72,21 @@
   color: #662992;
   font-size: xx-large;
   padding: 3vh;
+}
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ktiba {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding: 8vw;
+  text-align: center;
+}
+
+.Carouselitems {
+  align-self: flex-end;
 }
