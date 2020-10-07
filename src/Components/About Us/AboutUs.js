@@ -1,11 +1,14 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import Pic3 from "../Images/3.jpg";
 import Balade from "../Images/Balade1.png";
 import Carousel1 from "../Frequently Used/Carousel";
-import thumbnail6 from "../Images/6.png";
-import thumbnail7 from "../Images/7.png";
+import Syrine from "../Images/SyrineHssan.jpg";
+import Chairwoman from "../Images/Chairwoman.png";
+import plant from "../Images/plant.png";
+import value from "../Images/value.png";
+import value1 from "../Images/value1.png";
+import value2 from "../Images/value2.png";
 import { tileDataAboutUs } from "../../shared/data";
 
 import "./AboutUs.css";
@@ -17,18 +20,21 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "70em",
+    height: "150vh",
     alignContent: "space-between",
     backgroundPosition: "bottom",
   },
   Story: {
     fontSize: "xx-large",
     marginBottom: "2em",
-    fontFamily: "Inter",
     fontWeight: "bold",
   },
   Title: {
-    margin: "1em 0em 0em",
+    margin: "1em 0em 0em 0em",
+    fontWeight: "bold",
+  },
+  Teamtt: {
+    margin: "10vh 5vw ",
     fontWeight: "bold",
   },
   AboutUs: {
@@ -84,24 +90,22 @@ export default function AboutUs() {
   const classes = useStyles();
   return (
     <div className={classes.AboutUs}>
-      <h1 className={classes.Title}>
-        <b>W</b>omen <b>I</b>n <b>E</b>ngineering
-      </h1>
+      <h1 className={classes.Title}>Women IN Engineering</h1>
       <h1 className={classes.IEEE}>
         Student Branch<br></br>IEEE INSAT{" "}
       </h1>
       <div className="cssgrid">
         <div className="item1">
-          <img src={thumbnail6} className={classes.Pictures} alt="pic"></img>
+          <img src={plant} className={classes.Pictures} alt="pic"></img>
         </div>
         <div className="item2">
-          <img src={Pic3} className={classes.Pictures} alt="pic1"></img>
+          <img src={Syrine} className={classes.Pictures} alt="pic1"></img>
         </div>
         <div className="item3">
-          <img src={thumbnail7} className={classes.Pictures} alt="pic2"></img>
+          <img src={plant} className={classes.Pictures} alt="pic2"></img>
         </div>
         <div className="item4">
-          <img src={Pic3} className={classes.Pictures} alt="pic3"></img>
+          <img src={Chairwoman} className={classes.Pictures} alt="pic3"></img>
         </div>
       </div>
       <Grid className={classes.Container} container>
@@ -117,7 +121,7 @@ export default function AboutUs() {
         </Grid>
       </Grid>
       <div className={classes.team}>
-        <h1 className={classes.Title}> Our Team</h1>
+        <h1 className={classes.Teamtt}> Our Team</h1>
         <Carousel1 tileData={tileDataAboutUs}></Carousel1>
       </div>
       <Grid container className={classes.Valuess}>
@@ -127,11 +131,7 @@ export default function AboutUs() {
         <Grid item md={7}>
           <Grid container className={classes.oh}>
             <Grid item md={5}>
-              <img
-                src={thumbnail6}
-                className={classes.values}
-                alt="picure"
-              ></img>
+              <img src={value} className={classes.values} alt="picure"></img>
             </Grid>
             <Grid itme md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Commitment</h1>
@@ -144,14 +144,10 @@ export default function AboutUs() {
           </Grid>
           <Grid container className={classes.oh}>
             <Grid item md={5}>
-              <img
-                src={thumbnail6}
-                className={classes.values}
-                alt="picure"
-              ></img>
+              <img src={value1} className={classes.values} alt="picure"></img>
             </Grid>
             <Grid itme md={5} className={classes.valuetext}>
-              <h1 className={classes.Story}>Commitment</h1>
+              <h1 className={classes.Story}>Hard Work</h1>
               <p className={classes.paragraph}>
                 , consectetuer adipiscing elit, sed diam nonummy nibh euismod
                 tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem
@@ -161,14 +157,10 @@ export default function AboutUs() {
           </Grid>
           <Grid container className={classes.oh}>
             <Grid item md={5}>
-              <img
-                src={thumbnail6}
-                className={classes.values}
-                alt="picure"
-              ></img>
+              <img src={value2} className={classes.values} alt="picure"></img>
             </Grid>
             <Grid itme md={5} className={classes.valuetext}>
-              <h1 className={classes.Story}>Commitment</h1>
+              <h1 className={classes.Story}>Dedication</h1>
               <p className={classes.paragraph}>
                 , consectetuer adipiscing elit, sed diam nonummy nibh euismod
                 tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem
