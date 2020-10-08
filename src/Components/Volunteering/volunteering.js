@@ -1,10 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import ManyArticles from "../Frequently Used/manyArticles";
+
 import {
   Avatar,
   Button,
-  Container,
   CssBaseline,
   Grid,
   TextField,

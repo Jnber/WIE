@@ -1,90 +1,54 @@
 import React from "react";
-import image from "../Images/1.jpg";
-import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
-  articleframe: {
-    backgroundColor: "white",
-    display: "flex",
-    alignItems: "center",
-    padding: "2em",
-    flexDirection: "column",
-  },
-  articlename: {
-    color: "#9627a8",
-    marginBottom: "0.5em",
-    fontSize: "xxx-large",
-  },
-  grid: {
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    marginTop: "2em",
-    display: "grid",
-    gridGap: "1em",
-    gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-  },
-  articleimage: {
-    width: "25em",
-    margin: "1em",
-  },
-  articlesaying: {
-    fontSize: "xx-large",
-    color: "#43cac3",
-    alignSelf: "center",
-  },
-  articleparagraph: {
-    width: "75%",
-    color: "rgba(0,0,0,1)",
-    textAlign: "justify",
-  },
-  container: {
-    width: "75%",
-  },
-  paragraph: {
-    textAlign: "justify",
-  },
-}));
+export default function Article() {
+  const [open, setOpen] = React.useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-const art = {
-  titlee: "Star Program",
-  img: image,
-  state: "done",
-  desc:
-    "Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.",
-  paragraph1:
-    "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
-  paragraph2:
-    "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
-  paragraph3:
-    "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
-  saying: "Hey Hey We did it",
-};
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
-export default function Article(props) {
-  const classes = useStyles();
-  //const { art } = props;
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
-    <article className={classes.articleframe}>
-      <h1 className={classes.articlename}>{art.titlee}</h1>
-      <div className={classes.container}>
-        <div className={classes.grid}>
-          <img
-            src={art.img}
-            className={classes.articleimage}
-            alt="coucou"
-          ></img>
-          <h5 className={classes.articlesaying}>{art.saying}</h5>
-        </div>
-      </div>
-      <p className={classes.articleparagraph}>{art.paragraph1}</p>
-      <div className={classes.container}>
-        <div className={classes.grid}>
-          <p className={classes.paragraph}>{art.paragraph2}</p>
-          <img src={art.img} alt="alo" className={classes.articleimage}></img>
-        </div>
-      </div>
-      <p className={classes.articleparagraph}>{art.paragraph3}</p>
-    </article>
+    <div>
+      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+        Open responsive dialog
+      </Button>
+      <Dialog
+        fullScreen={fullScreen}
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="responsive-dialog-title"
+      >
+        <DialogTitle id="responsive-dialog-title">
+          {"Use Google's location service?"}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Let Google help apps determine location. This means sending
+            anonymous location data to Google, even when no apps are running.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button autoFocus onClick={handleClose} color="primary">
+            Disagree
+          </Button>
+          <Button onClick={handleClose} color="primary" autoFocus>
+            Agree
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
   );
 }

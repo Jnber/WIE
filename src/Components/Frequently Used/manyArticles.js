@@ -1,26 +1,36 @@
-import React from "react";
+import React, { Component } from "react";
 import "../Activities/Activities.css";
+import Button from "@material-ui/core/Button";
+import Article from "./Article";
+import Dialogue from "./Dialogue";
+import PropTypes from "prop-types";
 
-export default function ManyArticles(props) {
-  const { events } = props;
-  return (
+export default class ManyArticles extends Component {
+  state = { desc: "", openModal: false, titlee: "" };
+  handleOpenModal = ({ desc, titlee }) => {
+    this.setState({ desc, openModal: true, titlee });
+  };
+
+  handleCloseModal = () => {
+    this.setState({ openModal: false });
+  };
+
+  render = () => (
     <section className="breweries" id="breweries">
       <ul>
-        {events.map((e) => (
-          <li key={e.titlee}>
-            <figure>
-              <img src={e.img} alt="Several hands holding beer glasses"></img>
-              <figcaption>
-                <h3>{e.titlee}</h3>
-              </figcaption>
-            </figure>
-            <p>{e.desc}</p>
-            <a href="/Article" className="browsers" component={e}>
-              Show more
-            </a>
-          </li>
+        {this.events.map((e) => (
+          <Article
+            key={e.titlee}
+            {...e}
+            handleOpenModal={this.handleOpenModal}
+          />
         ))}
       </ul>
+      <Dialogue {...this.state} onCloseModal={this.handleCloseModal} />
     </section>
   );
 }
+
+Article.propTypes = {
+  events: PropTypes.array.isRequired,
+};

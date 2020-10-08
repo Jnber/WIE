@@ -48,6 +48,10 @@ export const sponsors = [
     Name: "Délice",
   },
   {
+    image: wizzlabs,
+    Name: "Wizzlabs",
+  },
+  {
     image: Nescafe,
     Name: "Nescafé",
   },
@@ -58,10 +62,6 @@ export const sponsors = [
   {
     image: patisserie,
     Name: "Patisserie Maher Mrabet Nabeul",
-  },
-  {
-    image: wizzlabs,
-    Name: "Wizzlabs",
   },
 ];
 
@@ -101,6 +101,14 @@ export const partners = [
   {
     image: selima,
     Name: "Association Selima",
+  },
+  {
+    image: Press,
+    Name: "INSAT Press",
+  },
+  {
+    image: PES,
+    Name: "PES",
   },
 ];
 
@@ -257,7 +265,7 @@ export const tileDataAboutUs = [
 
 export const events = [
   {
-    titlee: "Star Program",
+    titlee: "Star Program 2020",
     img: image,
     desc:
       "The main goal of the STAR PROGRAM was to promote engineering to high schoolers and encourage them to choose the path of engineering.      ",
@@ -266,45 +274,43 @@ export const events = [
     saying: "Hey Hey We did it",
   },
   {
-    titlee: "Pink October",
+    titlee: "She Solves 2019",
     img: image,
-    state: "done",
+
     desc:
-      "Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.",
-    paragraph1:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      "She solves :The first edition was held on 27th January in collaboration with ACM INSAT and IEEE COMPUTER SOCIETY Chapter.",
     paragraph2:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
-    paragraph3:
       "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
     saying: "Hey Hey We did it",
   },
   {
-    titlee: "WIE Orientate",
+    titlee: "Pink October 2018",
     img: image,
-    state: "done",
+
     desc:
-      "Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.",
-    paragraph1:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      "October is Breast Cancer Awareness month that’s why WIE INSAT STUDENT affinity group decided to think pink and went on 17 October 2018 to Salah Azaiez institute to visit breast cancer fighters.",
     paragraph2:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
-    paragraph3:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      "We offered them flowers, decorated their rooms with words of encouragement and hope to bring them more colours and optimism. We also offered them fruits to prevent infections and boost their immune system during the therapy. While talking to them, we were amazed by their patience, bravery and big hearts.",
     saying: "Hey Hey We did it",
   },
   {
-    titlee: "She Solves",
+    titlee: "WIE Overcome 2018",
     img: image,
-    state: "done",
+
     desc:
-      "Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.",
-    paragraph1:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      "Reduced mobility can cause pain and suffering, but it’s definitely a source of hard work, perseverance and endurance to overcome the disability and build a success. That’s why WIE INSAT organized in its first edition « WIE OVERCOME » to assist disabled people and help them open their eyes to see their true abilities.",
     paragraph2:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
-    paragraph3:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      "After contacting several centers, we chose AGIM : general association for people with reduced mobility to be our destination. On 23 November 2018 we went to AGIM (general association for people with reduced mobility). We started by decorating the computer science room to which we brought more colours. After that, we got to know the different students and we started off with a painting workshop. Then, it was music time. We sang and dance together. We got the chance to hear some beautiful and dulcet voices, we could see their vivacity, joy and excitement. To make this event more inspiring for the students , we invited 3 speakers with reduced mobility :<br></br>Mr Amine ben youssef : A lawyer<br></br>Ms Aida lassidi :a psychologist<br></br>Ms Lobna smida : a painter.<br></br>It was so uplifting for the students, we saw their eyes sparkling when the speakers were talking, they kept asking them about their educational and social experience.",
+    saying: "Hey Hey We did it",
+  },
+  {
+    titlee: "MAKE IT PINK 1 2017",
+    img: image,
+
+    desc:
+      "On 13 october 2017, WIE INSAT STUDENT affinity group arranged with ACTAMS ( Tunisian association …. ) a day at Abderrahman Mami’s hospital, in which to tried to add a touch of pink to the stressful day of the ChemoTherapy patients.",
+    paragraph2:
+      "We offered them flowers, as sign of life and optimism, and together we sang traditionnal songs to enlighten our spirits. We also offered them some fruits to help maintin a strong immunity during their Therapy.",
     saying: "Hey Hey We did it",
   },
 ];

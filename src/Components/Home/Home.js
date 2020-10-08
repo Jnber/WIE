@@ -22,6 +22,41 @@ function Home() {
   return (
     <div>
       <MainFeaturedPost container post={featuredPost} />
+      <div className="layout">
+        <div className="ktiba">
+          <h1>Yes we are doing it!</h1>
+          <p>
+            The number of our members is increasing each you and our events are
+            being well planned and structured with a clear goal of benifit for
+            each person either participatring or organizing the event,
+            workshop...
+          </p>
+          <div>
+            <h1>21</h1>
+            <h5>Members</h5>
+          </div>
+          <div>
+            <h1>15</h1>
+            <h5>Events</h5>
+          </div>
+          <div>
+            <h1>+1000</h1>
+            <h5>Participants</h5>
+          </div>
+        </div>
+        <Carousel className="Carouselitems">
+          {[I1, I2, I3, I4, I5, I6].map((value) => (
+            <div key={value.toString()}>
+              <img src={value} alt="WIE Pic" />
+            </div>
+          ))}
+        </Carousel>
+      </div>
+      <Grid container className="posts">
+        <Grid item id="articles" xs={12}>
+          <FeaturedPost key={featuredPost1.title} post={featuredPost1} />
+        </Grid>
+      </Grid>
 
       <div className="sponsors">
         <h1 component="h1" variant="h2" align="center" className="sponso">
@@ -54,41 +89,6 @@ function Home() {
             </div>
           ))}
         </div>
-      </div>
-      <Grid container className="posts">
-        <Grid item id="articles" xs={12}>
-          <FeaturedPost key={featuredPost1.title} post={featuredPost1} />
-        </Grid>
-      </Grid>
-      <div className="layout">
-        <div className="ktiba">
-          <h1>Yes we are doing it!</h1>
-          <p>
-            The number of our members is increasing each you and our events are
-            being well planned and structured with a clear goal of benifit for
-            each person either participatring or organizing the event,
-            workshop...
-          </p>
-          <div>
-            <h1>21</h1>
-            <h5>Members</h5>
-          </div>
-          <div>
-            <h1>15</h1>
-            <h5>Events</h5>
-          </div>
-          <div>
-            <h1>+1000</h1>
-            <h5>Participants</h5>
-          </div>
-        </div>
-        <Carousel className="Carouselitems">
-          {[I1, I2, I3, I4, I5, I6].map((value) => (
-            <div key={value.toString()}>
-              <img src={value} alt="WIE Pic" />
-            </div>
-          ))}
-        </Carousel>
       </div>
     </div>
   );

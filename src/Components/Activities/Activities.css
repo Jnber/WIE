@@ -19,17 +19,21 @@ html {
   opacity: 0.6;
 }
 
+.goingdown {
+  margin-top: -5vh;
+  font-size: larger;
+  justify-content: center;
+  display: flex;
+}
+
 /* Styles for the hero image */
 .hero {
   /* Photo by mnm.all on Unsplash */
-  background-image: linear-gradient(
-    to top,
-    #fdcbf1 0%,
-    #fdcbf1 1%,
-    #a89dac 100%
-  );
+  background-image: url("../Images/soon2.png");
   background-size: cover;
-  padding: 4rem 2rem;
+  background-position: bottom;
+  height: 90vh;
+  padding: 3rem 1.5rem;
   /* grid styles */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -44,6 +48,11 @@ html {
 .hero > h1 {
   font-size: 4rem;
   padding-bottom: 1rem;
+  margin-bottom: 2vh;
+}
+
+.coloraman {
+  color: white;
 }
 
 .hero > article > p {
