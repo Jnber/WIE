@@ -5,7 +5,7 @@ import { events } from "../../shared/data";
 
 export default function AlreadyDoneEvents() {
   return (
-    <main class="wrapper">
+    <main className="wrapper">
       <ManyArticles events={events}></ManyArticles>
     </main>
   );

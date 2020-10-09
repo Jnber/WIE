@@ -8,8 +8,50 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  imagedialogue: {
+    width: "50%",
+  },
+  up: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+  say: {
+    color: "#43cac3",
+    width: "50%",
+    padding: "0vh 1vw",
+    alignSelf: "center",
+    textAlign: "center",
+  },
+  arttitle: {
+    fontSize: "xxx-large",
+    textAlign: "center",
+    fontFamily: '"Quicksand", sans-serif',
+  },
+  browsers: {
+    backgroundColor: "#43cac3",
+    textDecoration: "none",
+    color: "white",
+    borderRadius: "0.25rem",
+    textAlign: "center",
+    display: "inline-block",
+  },
+  description: {
+    inlineSize: "3",
+  },
+  winelbutton: {
+    width: "100%",
+    padding: "1vh 1.5vw",
+    justifyContent: "flex-end",
+
+    display: "flex",
+  },
+}));
 
 export default function ManyArticles(props) {
+  const classes = useStyles();
   const { events } = props;
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
@@ -18,12 +60,14 @@ export default function ManyArticles(props) {
   const [d, de] = React.useState("");
   const [p, pa] = React.useState("");
   const [i, im] = React.useState("");
+  const [s, sa] = React.useState("");
 
   function handleClickOpen(e) {
     ti(e.titlee);
     de(e.desc);
     pa(e.paragraph2);
     im(e.img);
+    sa(e.saying);
     setOpen(true);
   }
 
@@ -41,16 +85,15 @@ export default function ManyArticles(props) {
                 <h3>{e.titlee}</h3>
               </figcaption>
             </figure>
-            <p>{e.desc}</p>
-
-            <Button
-              variant="outlined"
-              color="primary"
-              className="browsers"
-              onClick={() => handleClickOpen(e)}
-            >
-              Show more
-            </Button>
+            <p className={classes.description}>{e.desc}</p>
+            <div className={classes.winelbutton}>
+              <Button
+                className={classes.browsers}
+                onClick={() => handleClickOpen(e)}
+              >
+                Show more
+              </Button>
+            </div>
           </li>
         ))}
       </ul>
@@ -60,8 +103,14 @@ export default function ManyArticles(props) {
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle id="responsive-dialog-title">{t}</DialogTitle>
+        <DialogTitle id="responsive-dialog-title" className={classes.arttitle}>
+          {t}
+        </DialogTitle>
         <DialogContent>
+          <div className={classes.up}>
+            <img src={i} alt="t" className={classes.imagedialogue}></img>
+            <h4 className={classes.say}>{s}</h4>
+          </div>
           <DialogContentText>
             {d}
             {p}

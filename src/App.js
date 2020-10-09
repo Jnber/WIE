@@ -22,7 +22,6 @@ import ListItem from "@material-ui/core/ListItem";
 import Grid from "@material-ui/core/Grid";
 import Logo from "./Components/Images/LogoColor.png";
 import { Switch, Route, Link } from "react-router-dom";
-import Article from "./Components/Activities/Article";
 import Humanitarian from "./Components/Humanitarian/Humanitarian";
 import Contact from "./Components/Contact/Contact";
 import Awards from "./Components/Awards/Awards";
@@ -226,9 +225,6 @@ function App() {
               <Humanitarian />
             </Route>
 
-            <Route path="/Article">
-              <Article />
-            </Route>
             <Route path="/AlreadyDoneEvents">
               <AlreadyDoneEvents />
             </Route>

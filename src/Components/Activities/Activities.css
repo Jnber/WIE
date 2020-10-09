@@ -105,6 +105,7 @@ html {
   color: white;
   padding: 0.75rem;
   font-size: 1.25rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 .breweries > ul > li > p {
@@ -112,6 +113,8 @@ html {
   line-height: 1.5;
   padding: 1rem 0.75rem;
   color: #666666;
+  height: 15vh;
+  overflow: hidden;
 }
 
 .breweries > ul > li > a {
