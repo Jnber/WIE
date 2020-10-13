@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cadre: {
     backgroundColor: "rgba(0,0,0,0.7)",
-    margin: "0vh 20vw",
+    width: "70%",
   },
 }));
 

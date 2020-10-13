@@ -173,7 +173,7 @@ export default function AboutUs() {
             <Grid item md={5}>
               <img src={value} className={classes.values} alt="picure"></img>
             </Grid>
-            <Grid itme md={5} className={classes.valuetext}>
+            <Grid item md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Commitment</h1>
               <p className={classes.paragraph}>
                 , consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -186,7 +186,7 @@ export default function AboutUs() {
             <Grid item md={5}>
               <img src={value1} className={classes.values} alt="picure"></img>
             </Grid>
-            <Grid itme md={5} className={classes.valuetext}>
+            <Grid item md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Hard Work</h1>
               <p className={classes.paragraph}>
                 , consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -199,7 +199,7 @@ export default function AboutUs() {
             <Grid item md={5}>
               <img src={value2} className={classes.values} alt="picure"></img>
             </Grid>
-            <Grid itme md={5} className={classes.valuetext}>
+            <Grid item md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Dedication</h1>
               <p className={classes.paragraph}>
                 , consectetuer adipiscing elit, sed diam nonummy nibh euismod
