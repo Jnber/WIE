@@ -3,6 +3,7 @@ import "./Contact.css";
 import { Button, Grid, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Home, Mail, Phone } from "@material-ui/icons";
+import Pic from "../Images/mic.jpg";
 
 const useStyles = makeStyles((theme) => ({
   Up: {
@@ -10,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "2em",
   },
   talk: {
-    margin: "5em",
-
+    padding: "20vw",
+    color: "white",
     fontSize: "xxx-large",
   },
   grid: {
@@ -43,15 +44,22 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "2em",
     marginBottom: "1em",
   },
+  talkback: {
+    backgroundImage: `url(${Pic})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  },
 }));
 
 export default function Contact() {
   const classes = useStyles();
   return (
     <div className={classes.Up}>
-      <h1 className={classes.talk} id="talk">
-        Let's Talk
-      </h1>
+      <div className={classes.talkback}>
+        <h1 className={classes.talk} id="talk">
+          Let's Talk
+        </h1>
+      </div>
       <div className={classes.grid} id="supise">
         <div className={classes.info}>
           <p>

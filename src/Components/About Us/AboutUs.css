@@ -1,20 +1,33 @@
-.item1 { grid-area: menu; }
-.item2 { grid-area: main; }
-.item3 { grid-area: right; }
-.item4 { grid-area: left; }
+.item1 {
+  grid-area: menu;
+}
+.item2 {
+  grid-area: main;
+}
+.item3 {
+  grid-area: right;
+}
+.item4 {
+  grid-area: left;
+}
 
 .cssgrid {
   display: grid;
   grid-template-areas:
-    
-    'menu  main right '
-    'menu  left right';
+    "menu  main right "
+    "menu  left right";
   grid-gap: 5px;
-  padding: 5em 10em ;
-  
+  padding: 5em 10em;
 }
 
 @media only screen and (max-width: 896px) {
-  .cssgrid {
+  #plant {
     display: none;
-  }}
+  }
+  #containerinsat {
+    height: 270vh;
+  }
+  .cssgrid {
+    padding: 3em 3em;
+  }
+}

@@ -112,6 +112,8 @@ export default function ManyArticles(props) {
             <h4 className={classes.say}>{s}</h4>
           </div>
           <DialogContentText>
+            <br></br>
+            <br></br>
             {d}
             {p}
           </DialogContentText>

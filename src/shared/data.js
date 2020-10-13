@@ -151,45 +151,6 @@ export const tileData = [
   },
 ];
 
-export const cards = [
-  {
-    img: I1,
-    imgTitle: "event",
-    header: "event name",
-    desc: "cet evenement est blablabla",
-  },
-  {
-    img: I1,
-    imgTitle: "event",
-    header: "event name",
-    desc: "cet evenement est blablabla",
-  },
-  {
-    img: I1,
-    imgTitle: "event",
-    header: "event name",
-    desc: "cet evenement est blablabla",
-  },
-  {
-    img: I1,
-    imgTitle: "event",
-    header: "event name",
-    desc: "cet evenement est blablabla",
-  },
-  {
-    img: I1,
-    imgTitle: "event",
-    header: "event name",
-    desc: "cet evenement est blablabla",
-  },
-  {
-    img: I1,
-    imgTitle: "event",
-    header: "event name",
-    desc: "cet evenement est blablabla",
-  },
-];
-
 export const tileDataAboutUs = [
   {
     image: thumbnail6,
@@ -204,7 +165,8 @@ export const tileDataAboutUs = [
     image: thumbnail5,
     Name: "Nawel Bouaziz",
     Post: "Vice Chairwoman",
-    desc: "",
+    desc:
+      "On my own I will just create. and if it works, it works, and if it doesn't, I'll create something else. I don't have any limitations on what I think I could do or be.",
     fb: "https://www.facebook.com/nawel.bouaziz1/",
     linkedin: "https://www.linkedin.com/in/nawel-bouaziz-457896198/",
   },
@@ -249,7 +211,7 @@ export const tileDataAboutUs = [
     image: thumbnail1,
     Name: "Chaima Soui",
     Post: "Training Manager",
-    desc: "",
+    desc: "No summer lasts forever no winter skips its turn",
     fb: "https://www.facebook.com/chaima.soui",
     linkedin: "https://www.linkedin.com/in/chaima-soui-591740197/",
   },
@@ -321,19 +283,19 @@ export const awards = [
     desc: "Best Tunisia video",
     date: "2016",
     position: "left",
-    img: thumbnail2,
+    img: image,
   },
   {
     title: "Star Program",
     desc: "Best Tunisia video",
     date: "2017",
     position: "right",
-    img: thumbnail2,
+    img: image,
   },
   {
     title: "Outstanding IEEE WIE student affinity group award",
     date: "2018",
     position: "left",
-    img: thumbnail2,
+    img: image,
   },
 ];

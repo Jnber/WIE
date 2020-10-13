@@ -94,6 +94,9 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     //overflow: "hidden",
   },
+  symetric: {
+    justifyContent: "space-around",
+  },
 }));
 
 function App() {
@@ -120,7 +123,7 @@ function App() {
           })}
           id="Appbar"
         >
-          <Toolbar>
+          <Toolbar className={classes.symetric}>
             <IconButton
               color="inherit"
               aria-label="open drawer"

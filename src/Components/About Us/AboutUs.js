@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "150vh",
+    height: "200vh",
     alignContent: "space-between",
     backgroundPosition: "bottom",
   },
@@ -96,27 +96,67 @@ export default function AboutUs() {
       </h1>
       <div className="cssgrid">
         <div className="item1">
-          <img src={plant} className={classes.Pictures} alt="pic"></img>
+          <img
+            src={plant}
+            className={classes.Pictures}
+            id="plant"
+            alt="pic"
+          ></img>
         </div>
         <div className="item2">
           <img src={Syrine} className={classes.Pictures} alt="pic1"></img>
         </div>
         <div className="item3">
-          <img src={plant} className={classes.Pictures} alt="pic2"></img>
+          <img
+            src={plant}
+            className={classes.Pictures}
+            id="plant"
+            alt="pic2"
+          ></img>
         </div>
         <div className="item4">
           <img src={Chairwoman} className={classes.Pictures} alt="pic3"></img>
         </div>
       </div>
-      <Grid className={classes.Container} container>
-        <Grid item md={4}>
+      <Grid className={classes.Container} container id="containerinsat">
+        <Grid item md={4} sm={7} xs={10}>
           <h1 className={classes.Story}>Our story</h1>
           <p className={classes.paragraph}>
             IEEE WIE INSAT was established in 2016 and its main goal is to
             reinforce women engineers through different educational and
             technical activities . By bringing together a community of men and
             women of IEEE members , they will work together on several training
-            and projects for the benefit of humanity.
+            and projects for the benefit of humanity. <br></br>
+            <b>Word of the founder:</b>
+            <br></br>
+            <i>
+              "It was in a presentation about the international activities of
+              Women in Engineering (WIE) group in the TSYP IEEE Seminar in
+              December 2015 when I first heard about the WIE affinity group. The
+              presentation motivated me, and I thought INSAT would be the best
+              place to launch such association. Surrounded by talented, strong,
+              and inspiring women, I believed that together we could carry the
+              message of engineer women in Tunisia. Our first objective was to
+              promote women in engineering fields and highlight their
+              achievements and support and encourage young girls in high school
+              and college to pursue engineering careers.   The opening ceremony
+              of WIE was held in March 2016 during which several workshops were
+              organized to present the aims and activities of the association.
+              There were also sessions for engineer women working in different
+              engineering fields to share their success stories.   In only a few
+              months, the organization had more than 30 members, both men and
+              women. The members all worked together on various actions such as
+              visiting schools and hospitals, holding workshops and training
+              sessions to improve women skills and knowledge. That was just the
+              beginning. Today, after four years, the family has become quite
+              bigger and I am impressed by the work done by the teams and the
+              numerous innovative and supporting campaigns launched by our
+              members. I’m very proud of being part of this group and the IEEE
+              family. I thank everyone who played a role in making this dream
+              come true and I count on you and the next generations to continue
+              carrying the message of Tunisian engineer women and never forget
+              that “YES WIE CAN”. "
+            </i>
           </p>
         </Grid>
       </Grid>
