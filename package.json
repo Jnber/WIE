@@ -16,12 +16,14 @@
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-vertical-timeline-component": "^3.0.2"
+    "react-vertical-timeline-component": "^3.0.2",
+    "serve": "^11.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "prod": "serve -S ./build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

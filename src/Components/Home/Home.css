@@ -28,7 +28,7 @@
 
   display: grid;
   grid-gap: 1em;
-  /*grid-template-columns: auto auto auto auto;*/
+  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .sponsors {
@@ -41,10 +41,23 @@
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  .sponsors {
+    box-shadow: none;
+  }
+}
+
 .imagepartner {
   width: 50%;
-  height: 60%;
   margin-bottom: 1em;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagekolha {
+  width: 100%;
 }
 
 .item {
@@ -89,4 +102,5 @@
 
 .Carouselitems {
   align-self: flex-end;
+  width: 100vw;
 }

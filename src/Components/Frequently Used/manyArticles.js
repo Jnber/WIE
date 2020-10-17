@@ -48,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
 
     display: "flex",
   },
+  goback: {
+    whiteSpace: "pre-wrap",
+  },
 }));
 
 export default function ManyArticles(props) {
@@ -111,7 +114,7 @@ export default function ManyArticles(props) {
             <img src={i} alt="t" className={classes.imagedialogue}></img>
             <h4 className={classes.say}>{s}</h4>
           </div>
-          <DialogContentText>
+          <DialogContentText className={classes.goback}>
             <br></br>
             <br></br>
             {d}

@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Story: {
     fontSize: "xx-large",
-    marginBottom: "2em",
+    marginBottom: "1vh",
     fontWeight: "bold",
   },
   Title: {
@@ -176,9 +176,9 @@ export default function AboutUs() {
             <Grid item md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Commitment</h1>
               <p className={classes.paragraph}>
-                , consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem
-                ipsum dolor sit amet, consectetuer adipiscing elit.
+                What makes us really commited is our will to present the best of
+                ourselves and make the WIE INSAT affinity group stand proud
+                between chapters.
               </p>
             </Grid>
           </Grid>
@@ -189,9 +189,9 @@ export default function AboutUs() {
             <Grid item md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Hard Work</h1>
               <p className={classes.paragraph}>
-                , consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem
-                ipsum dolor sit amet, consectetuer adipiscing elit.
+                100% is never enough. Pation is what motivates us and pushes us
+                to give the best of ourselves. Making an event has never been
+                more challenging and we are proud we gave our best.
               </p>
             </Grid>
           </Grid>
@@ -202,9 +202,9 @@ export default function AboutUs() {
             <Grid item md={5} className={classes.valuetext}>
               <h1 className={classes.Story}>Dedication</h1>
               <p className={classes.paragraph}>
-                , consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat Lorem
-                ipsum dolor sit amet, consectetuer adipiscing elit.
+                It's not just a mandat, it's an experience, a touch and a print
+                we leave for the new commers, this is why we are dedicated to
+                give the best of us and make people remember WIE.
               </p>
             </Grid>
           </Grid>

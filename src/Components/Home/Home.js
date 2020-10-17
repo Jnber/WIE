@@ -80,11 +80,13 @@ function Home() {
         <div className="gridofpartners">
           {partners.map((partner) => (
             <div className="item" key={partner.Name}>
-              <img
-                src={partner.image}
-                className="imagepartner"
-                alt="partners"
-              ></img>
+              <div className="imagepartner">
+                <img
+                  src={partner.image}
+                  alt="partners"
+                  className="imagekolha"
+                />
+              </div>
               <h2 className="text">{partner.Name}</h2>
             </div>
           ))}

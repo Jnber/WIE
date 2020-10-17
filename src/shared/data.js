@@ -29,6 +29,11 @@ import Press from "../Components/Images/insatpress.png";
 import PES from "../Components/Images/PES.png";
 import RAS from "../Components/Images/RAS.png";
 import selima from "../Components/Images/selima.jpg";
+import Pink from "../Components/Images/PinkOctober.png";
+import Solve2019 from "../Components/Images/SheSolves2019.png";
+import Woman2019 from "../Components/Images/WomanInPower2019.png";
+import preneur2019 from "../Components/Images/Womenpreneur2019.png";
+import Star2019 from "../Components/Images/StarProgram2019.png";
 
 export const featuredPost1 = {
   title: "IEEE INSAT",
@@ -68,47 +73,58 @@ export const sponsors = [
 export const partners = [
   {
     image: acm,
-    Name: "ACM",
+    Name: "ACM INSAT",
+    link: "https://insat.acm.org/",
   },
   {
     image: c,
     Name: "4C INSAT",
+    link: "http://www.insat.rnu.tn/Fr/centre-4c_11_12",
   },
   {
     image: atacs,
     Name: "Atamcs",
+    link: "http://atamcs.tn/",
   },
   {
     image: cine,
     Name: "Ciné Radio INSAT",
+    link: "http://www.cineradioinsat.com/",
   },
   {
     image: cs,
-    Name: "CS",
+    Name: "CS INSAT",
+    link: "http://cs-insat.ieee.tn/#/",
   },
   {
     image: embs,
-    Name: "EMBS",
+    Name: "EMBS INSAT",
+    link: "http://embs-insat.ieee.tn/",
   },
   {
     image: IAS,
-    Name: "IAS",
+    Name: "IAS INSAT",
+    link: "https://ias-insat.ieee.tn/",
   },
   {
     image: RAS,
-    Name: "RAS",
+    Name: "RAS INSAT",
+    link: "https://ras-insat.ieee.tn/",
   },
   {
     image: selima,
     Name: "Association Selima",
+    link: "https://fr-fr.facebook.com/Associationselima/",
   },
   {
     image: Press,
     Name: "INSAT Press",
+    link: "https://insatpress.tn/",
   },
   {
     image: PES,
-    Name: "PES",
+    Name: "PES INSAT",
+    link: "https://pes-insat.ieee.tn",
   },
 ];
 
@@ -236,14 +252,43 @@ export const events = [
     saying: "Hey Hey We did it",
   },
   {
+    titlee: "Woman In Power 2019",
+    img: Woman2019,
+    desc:
+      "Conference in which female speakers active in the field of power and energy shared their experiences and success stories.",
+    paragraph2: `-Mrs Bobadilla Nourane : Exploration promotion and marketing deputy manager at 'The Tunisian Company Petroleum Activities'.
+      - Mrs Awatef Siala Fourati who has 2 diplomas which are : Msc in geology and principal geologist engineer. Her current position is an environmental and social safeguards specialist.
+      - Mrs Nedra MTIMET DEBAYA who has an important part in the Renewable Energies Project executed by 'The Tunisian Company Petroleum Activities'.
+      - Mrs Soumaya Alouane : a geosciences ‘engineer. She is the operation and production manager in the Tunisian company of oil activities`,
+    saying: "Together we can raise the world",
+  },
+  {
     titlee: "She Solves 2019",
-    img: image,
+    img: Solve2019,
 
     desc:
       "She solves :The first edition was held on 27th January in collaboration with ACM INSAT and IEEE COMPUTER SOCIETY Chapter.",
     paragraph2:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder!I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder! I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
     saying: "Hey Hey We did it",
+  },
+  {
+    titlee: "Womenpreneur experience 2019",
+    img: preneur2019,
+    desc:
+      "An awareness campaign that went on tour in Morocco, Tunisia, and Jordan to support women in technology and entrepreneurship.",
+    paragraph2:
+      "WIE INSAT was one of the communication partners of this campaign. We also helped them with the registration for the conference day. ",
+    saying: "A woman can do whatever she aims to do!",
+  },
+  {
+    titlee: "Star Program 2019",
+    img: Star2019,
+    desc:
+      "Various workshops held by INSAT students in different fields of engineering: chemistry, biology, robotics, complexity, programming, industry, power and energy.",
+    paragraph2:
+      "+ emotional intelligence training to develop teenagers’ soft skills + competitions to elaborate team spirit + artistic breaks ",
+    saying: "dunno",
   },
   {
     titlee: "Pink October 2018",
@@ -261,8 +306,10 @@ export const events = [
 
     desc:
       "Reduced mobility can cause pain and suffering, but it’s definitely a source of hard work, perseverance and endurance to overcome the disability and build a success. That’s why WIE INSAT organized in its first edition « WIE OVERCOME » to assist disabled people and help them open their eyes to see their true abilities.",
-    paragraph2:
-      "After contacting several centers, we chose AGIM : general association for people with reduced mobility to be our destination. On 23 November 2018 we went to AGIM (general association for people with reduced mobility). We started by decorating the computer science room to which we brought more colours. After that, we got to know the different students and we started off with a painting workshop. Then, it was music time. We sang and dance together. We got the chance to hear some beautiful and dulcet voices, we could see their vivacity, joy and excitement. To make this event more inspiring for the students , we invited 3 speakers with reduced mobility :<br></br>Mr Amine ben youssef : A lawyer<br></br>Ms Aida lassidi :a psychologist<br></br>Ms Lobna smida : a painter.<br></br>It was so uplifting for the students, we saw their eyes sparkling when the speakers were talking, they kept asking them about their educational and social experience.",
+    paragraph2: `After contacting several centers, we chose AGIM : general association for people with reduced mobility to be our destination. On 23 November 2018 we went to AGIM (general association for people with reduced mobility). We started by decorating the computer science room to which we brought more colours. After that, we got to know the different students and we started off with a painting workshop. Then, it was music time. We sang and dance together. We got the chance to hear some beautiful and dulcet voices, we could see their vivacity, joy and excitement. To make this event more inspiring for the students , we invited 3 speakers with reduced mobility :	
+      Mr Amine ben youssef : A lawyer
+      Ms Aida lassidi :a psychologist<br></br>Ms Lobna smida : a painter.
+      It was so uplifting for the students, we saw their eyes sparkling when the speakers were talking, they kept asking them about their educational and social experience.`,
     saying: "Hey Hey We did it",
   },
   {
@@ -274,6 +321,70 @@ export const events = [
     paragraph2:
       "We offered them flowers, as sign of life and optimism, and together we sang traditionnal songs to enlighten our spirits. We also offered them some fruits to help maintin a strong immunity during their Therapy.",
     saying: "Hey Hey We did it",
+  },
+];
+
+export const Soon = [
+  {
+    titlee: "Star Program 2021",
+    img: image,
+    desc:
+      "The main goal of the STAR PROGRAM was to promote engineering to high schoolers and encourage them to choose the path of engineering.      ",
+    paragraph2:
+      "This year is going to be exceptional due to covid 19, but hopefully it will be unique in a good way when it comes to the event!",
+    saying: "COVID 19 Edition",
+  },
+  {
+    titlee: "She Solves 2021",
+    img: image,
+
+    desc:
+      "She solves In collaboration with ACM INSAT and IEEE COMPUTER SOCIETY Chapter.",
+    paragraph2:
+      "Being a tech competition about problem solving, we don't see abeeter way for it to envolve than to be help remotely from homes to secure your safty. Stay Tuned!",
+    saying: "We will solve the biggest problems!",
+  },
+  {
+    titlee: "Pink October 2020",
+    img: Pink,
+
+    desc:
+      "October is Breast Cancer Awareness month that’s why WIE INSAT STUDENT affinity group decided to think pink ",
+    paragraph2:
+      "This years edition is being held mostly online. The program of the month contains Tips, Share Your Hair Challenge and on Wednesday we wear pink",
+    saying: "We are stronger than cancer!",
+  },
+];
+
+export const Humans = [
+  {
+    titlee: "Bag To School",
+    img: image,
+    desc:
+      "The main goal of the STAR PROGRAM was to promote engineering to high schoolers and encourage them to choose the path of engineering.      ",
+    paragraph2:
+      "This year is going to be exceptional due to covid 19, but hopefully it will be unique in a good way when it comes to the event!",
+    saying: "COVID 19 Edition",
+  },
+  {
+    titlee: "She Solves 2021",
+    img: image,
+
+    desc:
+      "She solves In collaboration with ACM INSAT and IEEE COMPUTER SOCIETY Chapter.",
+    paragraph2:
+      "Being a tech competition about problem solving, we don't see abeeter way for it to envolve than to be help remotely from homes to secure your safty. Stay Tuned!",
+    saying: "We will solve the biggest problems!",
+  },
+  {
+    titlee: "Pink October 2020",
+    img: Pink,
+
+    desc:
+      "October is Breast Cancer Awareness month that’s why WIE INSAT STUDENT affinity group decided to think pink ",
+    paragraph2:
+      "This years edition is being held mostly online. The program of the month contains Tips, Share Your Hair Challenge and on Wednesday we wear pink",
+    saying: "We are stronger than cancer!",
   },
 ];
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Activities.css";
 import ManyArticles from "../Frequently Used/manyArticles";
-import { events } from "../../shared/data";
+import { Soon } from "../../shared/data";
 import { ArrowDownward } from "@material-ui/icons";
 
 export default function Activities() {
@@ -23,7 +23,7 @@ export default function Activities() {
       <h2 className="soon" id="p">
         Coming soon
       </h2>
-      <ManyArticles events={events}></ManyArticles>
+      <ManyArticles events={Soon}></ManyArticles>
     </main>
   );
 }
