@@ -65,11 +65,13 @@ function Home() {
         <div className="gridofpartners">
           {sponsors.map((sponsor) => (
             <div className="item" key={sponsor.Name}>
-              <img
-                src={sponsor.image}
-                className="imagepartner"
-                alt="partners"
-              ></img>
+              <a href={sponsor.link} target="blank">
+                <img
+                  src={sponsor.image}
+                  className="imagepartner"
+                  alt="partners"
+                ></img>
+              </a>
               <h2 className="text">{sponsor.Name}</h2>
             </div>
           ))}
@@ -81,11 +83,13 @@ function Home() {
           {partners.map((partner) => (
             <div className="item" key={partner.Name}>
               <div className="imagepartner">
-                <img
-                  src={partner.image}
-                  alt="partners"
-                  className="imagekolha"
-                />
+                <a href={partner.link} target="blank">
+                  <img
+                    src={partner.image}
+                    alt="partners"
+                    className="imagekolha"
+                  />
+                </a>
               </div>
               <h2 className="text">{partner.Name}</h2>
             </div>

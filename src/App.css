@@ -62,13 +62,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand";
+  font-weight: 700;
   color: #662992;
 }
 
 p,
 a {
   /*font-family: "inter", sans-serif;*/
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand";
   font-weight: normal;
 }

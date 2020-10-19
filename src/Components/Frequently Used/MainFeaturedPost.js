@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   Title: {
     color: "#e8667b",
+    fontWeight: "700",
   },
   mainFeaturedPostContent: {
     position: "relative",

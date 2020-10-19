@@ -26,6 +26,7 @@ import Humanitarian from "./Components/Humanitarian/Humanitarian";
 import Contact from "./Components/Contact/Contact";
 import Awards from "./Components/Awards/Awards";
 import Volunteering from "./Components/Volunteering/volunteering";
+import "./Fonts/quicksand.css";
 
 const drawerWidth = 240;
 
