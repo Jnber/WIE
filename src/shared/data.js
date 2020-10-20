@@ -218,7 +218,8 @@ export const tileDataAboutUs = [
     image: thumbnail8,
     Name: "Manel Reguima",
     Post: "Human Ressources Manager",
-    desc: "",
+    desc:
+      "I want to be happy with myself and to find someone else who makes me happy. Basically, I just want to be happy in general.",
     fb: "https://www.facebook.com/manel.reghima",
     linkedin: "https://www.linkedin.com/in/manel-reghima-8449721a6/",
   },
