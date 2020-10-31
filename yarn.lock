@@ -9254,10 +9254,10 @@ react-transition-group@^4.4.0, react-transition-group@^4.4.1:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react-vertical-timeline-component@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.0.2.tgz#e1c39139b0732c896f6b52b92a3db634784dd5aa"
-  integrity sha512-k56en5bb1WRHjr1B8mXRmnGpiHIWvf4lgL26T0yQJEkHVhj3G5lKGXmJrpdRftLSrvYsDmY428obERAG7hmtjA==
+react-vertical-timeline-component@^3.2.0:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.3.1.tgz#d6a28c26c6915dfa99a754c607aa6176b772d46c"
+  integrity sha512-ZlxIaPakHb22N2T6IkKILZLDIIEUnSWPlx6NTFyHEKbXMj3P1Co0qDUT57iuHib6UUJGhbdmRp3km3WNZsZw1g==
   dependencies:
     classnames "^2.2.6"
     prop-types "^15.7.2"
