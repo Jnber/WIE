@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   cadre: {
-    backgroundColor: "rgba(0,0,0,0.7)",
+    backgroundColor: "#d047af3b",
     width: "70%",
   },
 }));

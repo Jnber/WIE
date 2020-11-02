@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home/Home";
 import AboutUs from "./Components/About Us/AboutUs";
 import Activities from "./Components/Activities/Activities";
-import AlreadyDoneEvents from "./Components/Activities/AlreadyDoneEvents";
 import Footer from "./Components/Frequently Used/Footer";
+import Events from "./Components/Activities/Event";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -228,10 +228,7 @@ function App() {
             <Route path="/Humanitarian">
               <Humanitarian />
             </Route>
-
-            <Route path="/AlreadyDoneEvents">
-              <AlreadyDoneEvents />
-            </Route>
+            <Route path="/Events" component={Events} />
             <Route path="/Volunteering">
               <Volunteering></Volunteering>
             </Route>

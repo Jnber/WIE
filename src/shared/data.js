@@ -167,6 +167,66 @@ export const tileData = [
   },
 ];
 
+export const PinkOctober = {
+  title: "October Pink",
+  intro:
+    "October is Breast Cancer Awareness month that’s why WIE INSAT STUDENT affinity group decided to think pink and went on 17 October 2018 to Salah Azaiez institute to visit breast cancer fighters.",
+  background: image,
+  years: [
+    {
+      year: "2018",
+      desc:
+        "We offered them flowers, decorated their rooms with words of encouragement and hope to bring them more colours and optimism. We also offered them fruits to prevent infections and boost their immune system during the therapy. While talking to them, we were amazed by their patience, bravery and big hearts.",
+      image: image,
+    },
+    {
+      year: "2019",
+      desc: "",
+      image: image,
+    },
+    {
+      year: "2020",
+      desc:
+        "This years edition is being held mostly online. The program of the month contains Tips available as highlights on our instagram wie.iee.insat , Share Your Hair Challenge ,on Wednesday we wear pink, videos with doctors and nurses and a live stream of a nutristionist all available on our facebook page. ",
+      image: image,
+    },
+  ],
+};
+export const Star = {
+  title: "Star Program",
+  intro:
+    "The main goal of the STAR PROGRAM was to promote engineering to high schoolers and encourage them to choose the path of engineering.",
+  background: image,
+  years: [
+    {
+      year: "2019",
+      desc:
+        "Various workshops held by INSAT students in different fields of engineering: chemistry, biology, robotics, complexity, programming, industry, power and energy.  emotional intelligence training to develop teenagers’ soft skills + competitions to elaborate team spirit + artistic breaks",
+      image: Star2019,
+    },
+    {
+      year: "2020",
+      desc:
+        "Indeed we introduced multiple workshops including different fields in engineering such as chemistry , biology, robotics , energy… However as much as the workshops included the professional part of the event, we did entertain the pupils by giving rests between every workshop and by bringing foods and drinks and of course some music to boost the mood .",
+      image: image,
+    },
+  ],
+};
+export const SheSolves = {
+  title: "SheSolves",
+  intro:
+    "She solves :The first edition was held on 27th January in collaboration with ACM INSAT and IEEE COMPUTER SOCIETY Chapter. It's a problem solving competition which main goal is to initiate woman into problem solving specifically",
+  background: image,
+  years: [
+    {
+      year: "2019",
+      desc:
+        "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder! I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
+      image: Solve2019,
+    },
+  ],
+};
+
 export const tileDataAboutUs = [
   {
     image: thumbnail6,
@@ -236,22 +296,14 @@ export const tileDataAboutUs = [
     image: thumbnail7,
     Name: "Oumaima Kboubi",
     Post: "Media/Communication Manager",
-    desc: "",
+    desc:
+      "The darkest nights produce the brightest stars and the brightest stars are those who shine for the benefit of others.",
     fb: "https://www.facebook.com/oumaima.kaboubi1",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/oumaima-kaboubi-63a8a5194/",
   },
 ];
 
 export const events = [
-  {
-    titlee: "Star Program 2020",
-    img: image,
-    desc:
-      "The main goal of the STAR PROGRAM was to promote engineering to high schoolers and encourage them to choose the path of engineering.      ",
-    paragraph2:
-      "Indeed we introduced multiple workshops including different fields in engineering such as chemistry , biology, robotics , energy… However as much as the workshops included the professional part of the event, we did entertain the pupils by giving rests between every workshop and by bringing foods and drinks and of course some music to boost the mood .",
-    saying: "Hey Hey We did it",
-  },
   {
     titlee: "Woman In Power 2019",
     img: Woman2019,
@@ -263,16 +315,7 @@ export const events = [
       - Mrs Soumaya Alouane : a geosciences ‘engineer. She is the operation and production manager in the Tunisian company of oil activities`,
     saying: "Together we can raise the world",
   },
-  {
-    titlee: "She Solves 2019",
-    img: Solve2019,
 
-    desc:
-      "She solves :The first edition was held on 27th January in collaboration with ACM INSAT and IEEE COMPUTER SOCIETY Chapter.",
-    paragraph2:
-      "I've been using React.js for about 6 months now. In the grand scheme of things that's not very long at all, but in the ever-churning world of JavaScript frameworks, that just about qualifies you as a bearded elder! I've helped out a few people lately with React starter tips, so I thought it would be a good idea to write some of them up here to share more broadly. These are all either things that I wish I'd known when I started out, or things that really helped me 'get' React. I'm going to assume that you know the absolute basics; if the words component, props, or state are unfamiliar to you, then you might want to read the official Getting started or Tutorial pages.",
-    saying: "Hey Hey We did it",
-  },
   {
     titlee: "Womenpreneur experience 2019",
     img: preneur2019,
@@ -282,25 +325,7 @@ export const events = [
       "WIE INSAT was one of the communication partners of this campaign. We also helped them with the registration for the conference day. ",
     saying: "A woman can do whatever she aims to do!",
   },
-  {
-    titlee: "Star Program 2019",
-    img: Star2019,
-    desc:
-      "Various workshops held by INSAT students in different fields of engineering: chemistry, biology, robotics, complexity, programming, industry, power and energy.",
-    paragraph2:
-      "+ emotional intelligence training to develop teenagers’ soft skills + competitions to elaborate team spirit + artistic breaks ",
-    saying: "dunno",
-  },
-  {
-    titlee: "Pink October 2018",
-    img: image,
 
-    desc:
-      "October is Breast Cancer Awareness month that’s why WIE INSAT STUDENT affinity group decided to think pink and went on 17 October 2018 to Salah Azaiez institute to visit breast cancer fighters.",
-    paragraph2:
-      "We offered them flowers, decorated their rooms with words of encouragement and hope to bring them more colours and optimism. We also offered them fruits to prevent infections and boost their immune system during the therapy. While talking to them, we were amazed by their patience, bravery and big hearts.",
-    saying: "Hey Hey We did it",
-  },
   {
     titlee: "WIE Overcome 2018",
     img: image,
@@ -325,38 +350,6 @@ export const events = [
   },
 ];
 
-export const Soon = [
-  {
-    titlee: "Star Program 2021",
-    img: image,
-    desc:
-      "The main goal of the STAR PROGRAM was to promote engineering to high schoolers and encourage them to choose the path of engineering.      ",
-    paragraph2:
-      "This year is going to be exceptional due to covid 19, but hopefully it will be unique in a good way when it comes to the event!",
-    saying: "COVID 19 Edition",
-  },
-  {
-    titlee: "She Solves 2021",
-    img: image,
-
-    desc:
-      "She solves In collaboration with ACM INSAT and IEEE COMPUTER SOCIETY Chapter.",
-    paragraph2:
-      "Being a tech competition about problem solving, we don't see abeeter way for it to envolve than to be help remotely from homes to secure your safty. Stay Tuned!",
-    saying: "We will solve the biggest problems!",
-  },
-  {
-    titlee: "Pink October 2020",
-    img: Pink,
-
-    desc:
-      "October is Breast Cancer Awareness month that’s why WIE INSAT STUDENT affinity group decided to think pink ",
-    paragraph2:
-      "This years edition is being held mostly online. The program of the month contains Tips, Share Your Hair Challenge and on Wednesday we wear pink",
-    saying: "We are stronger than cancer!",
-  },
-];
-
 export const Humans = [
   {
     titlee: "Bag To School",
@@ -376,16 +369,6 @@ export const Humans = [
     paragraph2:
       "Being a tech competition about problem solving, we don't see abeeter way for it to envolve than to be help remotely from homes to secure your safty. Stay Tuned!",
     saying: "We will solve the biggest problems!",
-  },
-  {
-    titlee: "Pink October 2020",
-    img: Pink,
-
-    desc:
-      "October is Breast Cancer Awareness month that’s why WIE INSAT STUDENT affinity group decided to think pink ",
-    paragraph2:
-      "This years edition is being held mostly online. The program of the month contains Tips, Share Your Hair Challenge and on Wednesday we wear pink",
-    saying: "We are stronger than cancer!",
   },
 ];
 
