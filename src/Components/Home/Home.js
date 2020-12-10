@@ -65,7 +65,7 @@ function Home() {
         <div className="gridofpartners">
           {sponsors.map((sponsor) => (
             <div className="item" key={sponsor.Name}>
-              <a href={sponsor.link} target="blank">
+              <a href={sponsor.link} target="blank" className="imagesponso">
                 <img
                   src={sponsor.image}
                   className="imagepartner"
@@ -83,7 +83,7 @@ function Home() {
           {partners.map((partner) => (
             <div className="item" key={partner.Name}>
               <div className="imagepartner">
-                <a href={partner.link} target="blank">
+                <a href={partner.link} target="blank" className="imagesponso">
                   <img
                     src={partner.image}
                     alt="partners"

@@ -26,6 +26,7 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     flexDirection: "column",
     width: "90%",
+    justifySelf: "center",
   },
   links: {
     textAlign: "right",

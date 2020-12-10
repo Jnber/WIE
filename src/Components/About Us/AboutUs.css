@@ -17,7 +17,7 @@
     "menu  main right "
     "menu  left right";
   grid-gap: 5px;
-  padding: 5em 10em;
+  padding: 5vh 2vw;
 }
 
 @media only screen and (max-width: 896px) {
@@ -28,6 +28,6 @@
     height: 270vh;
   }
   .cssgrid {
-    padding: 3em 3em;
+    padding: 10vh 5vw;
   }
 }

@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: "center",
   },
   Valuess: {
-    marginTop: "9em",
+    padding: "10vh 5vw",
     alignItems: "center",
   },
   valuetext: {
